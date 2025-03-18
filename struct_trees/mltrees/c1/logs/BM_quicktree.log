@@ -1,0 +1,186 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:36:16 2025]
+rule BM_quicktree:
+    input: c1/fident_1_exp_fastmemat.txt
+    output: c1/fident_1_exp_struct_tree.nwk
+    log: c1/logs/fident_1_exp_fastme.log
+    jobid: 0
+    reason: Missing output files: c1/fident_1_exp_struct_tree.nwk
+    wildcards: folder=c1, mattype=fident, alntype=1, exp=exp
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037408, partition=cpu, time=00:45:00
+
+quicktree -i m c1/fident_1_exp_fastmemat.txt > c1/fident_1_exp_struct_tree.nwk 
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Building DAG of jobs...
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:36:16 2025]
+rule BM_quicktree:
+    input: c1/alntmscore_1_exp_fastmemat.txt
+    output: c1/alntmscore_1_exp_struct_tree.nwk
+    log: c1/logs/alntmscore_1_exp_fastme.log
+    jobid: 0
+    reason: Missing output files: c1/alntmscore_1_exp_struct_tree.nwk
+    wildcards: folder=c1, mattype=alntmscore, alntype=1, exp=exp
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037413, partition=cpu, time=00:45:00
+
+quicktree -i m c1/alntmscore_1_exp_fastmemat.txt > c1/alntmscore_1_exp_struct_tree.nwk 
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:36:16 2025]
+rule BM_quicktree:
+    input: c1/alntmscore_1_raw_fastmemat.txt
+    output: c1/alntmscore_1_raw_struct_tree.nwk
+    log: c1/logs/alntmscore_1_raw_fastme.log
+    jobid: 0
+    reason: Missing output files: c1/alntmscore_1_raw_struct_tree.nwk
+    wildcards: folder=c1, mattype=alntmscore, alntype=1, exp=raw
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037412, partition=cpu, time=00:45:00
+
+quicktree -i m c1/alntmscore_1_raw_fastmemat.txt > c1/alntmscore_1_raw_struct_tree.nwk 
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+Select jobs to execute...
+
+
+[Tue Mar 18 22:36:16 2025]
+[Tue Mar 18 22:36:16 2025]
+Using shell: /usr/bin/bash
+rule BM_quicktree:
+    input: c1/fident_1_raw_fastmemat.txt
+    output: c1/fident_1_raw_struct_tree.nwk
+    log: c1/logs/fident_1_raw_fastme.log
+    jobid: 0
+    reason: Missing output files: c1/fident_1_raw_struct_tree.nwk
+    wildcards: folder=c1, mattype=fident, alntype=1, exp=raw
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037411, partition=cpu, time=00:45:00
+Provided cores: 1 (use --cores to define parallelism)
+
+rule BM_quicktree:
+    input: c1/lddt_1_exp_fastmemat.txt
+    output: c1/lddt_1_exp_struct_tree.nwk
+    log: c1/logs/lddt_1_exp_fastme.log
+    jobid: 0
+    reason: Missing output files: c1/lddt_1_exp_struct_tree.nwk
+    wildcards: folder=c1, mattype=lddt, alntype=1, exp=exp
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037410, partition=cpu, time=00:45:00
+Rules claiming more threads will be scaled down.
+
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+quicktree -i m c1/fident_1_raw_fastmemat.txt > c1/fident_1_raw_struct_tree.nwk 
+quicktree -i m c1/lddt_1_exp_fastmemat.txt > c1/lddt_1_exp_struct_tree.nwk 
+
+[Tue Mar 18 22:36:16 2025]
+rule BM_quicktree:
+    input: c1/lddt_1_raw_fastmemat.txt
+    output: c1/lddt_1_raw_struct_tree.nwk
+    log: c1/logs/lddt_1_raw_fastme.log
+    jobid: 0
+    reason: Missing output files: c1/lddt_1_raw_struct_tree.nwk
+    wildcards: folder=c1, mattype=lddt, alntype=1, exp=raw
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037409, partition=cpu, time=00:45:00
+
+quicktree -i m c1/lddt_1_raw_fastmemat.txt > c1/lddt_1_raw_struct_tree.nwk 
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+[Tue Mar 18 22:36:20 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:36:21 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:36:21 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:36:21 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:36:21 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:36:21 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/

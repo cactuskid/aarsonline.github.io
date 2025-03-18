@@ -1,0 +1,90 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Using shell: /usr/bin/bash
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+Select jobs to execute...
+
+[Tue Mar 18 22:41:19 2025]
+rule BM_ML_mad_root_structML:
+    input: c1/templateXAA.nx.treefile
+    output: c1/templateXAA.nx.treefile.rooted
+    log: c1/logs/structML_madroot_AA.log
+    jobid: 0
+    reason: Missing output files: c1/templateXAA.nx.treefile.rooted
+    wildcards: folder=c1, alntype=AA
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037696, partition=cpu, time=00:45:00
+
+/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/madroot/mad c1/templateXAA.nx.treefile
+
+[Tue Mar 18 22:41:19 2025]
+rule BM_ML_mad_root_structML:
+    input: c1/templateX3di.nx.treefile
+    output: c1/templateX3di.nx.treefile.rooted
+    log: c1/logs/structML_madroot_3di.log
+    jobid: 0
+    reason: Missing output files: c1/templateX3di.nx.treefile.rooted
+    wildcards: folder=c1, alntype=3di
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037695, partition=cpu, time=00:45:00
+
+/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/madroot/mad c1/templateX3di.nx.treefile
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+
+MAD phylogenetic rooting
+
+Analyzing file 'c1/templateX3di.nx.treefile'...
+>> [MAD=0.244_AI=0.985_CCV=27.6%_N=1/1]
+
+Minimal ancestor deviation, MAD = 0.244
+           Ambiguity index,  AI = 0.985
+                  Clock CV, CCV = 27.6%
+Rooted tree written to 'c1/templateX3di.nx.treefile.rooted'
+
+
+    - Please cite DOI:10.1038/s41559-017-0193
+
+
+MAD phylogenetic rooting
+
+Analyzing file 'c1/templateXAA.nx.treefile'...
+>> [MAD=0.187_AI=0.924_CCV=19.5%_N=1/1]
+
+Minimal ancestor deviation, MAD = 0.187
+           Ambiguity index,  AI = 0.924
+                  Clock CV, CCV = 19.5%
+Rooted tree written to 'c1/templateXAA.nx.treefile.rooted'
+
+
+    - Please cite DOI:10.1038/s41559-017-0193
+
+[Tue Mar 18 22:41:25 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:41:25 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/

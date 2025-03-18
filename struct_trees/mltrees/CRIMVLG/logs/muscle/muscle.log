@@ -1,0 +1,14 @@
+
+muscle 5.1.linux64 []  528Gb RAM, 48 cores
+Built May 16 2023 07:53:40
+(C) Copyright 2004-2021 Robert C. Edgar.
+https://drive5.com
+
+Input: 47 seqs, avg length 131, max 158
+
+00:00 7.6Mb  CPU has 48 cores, running 1 threads
+00:00 7.6Mb   0.093% Calc posteriors00:01 9.1Mb     7.5% Calc posteriors00:02 12Mb     36.5% Calc posteriors00:03 14Mb     64.6% Calc posteriors00:04 17Mb     95.9% Calc posteriors00:04 18Mb    100.0% Calc posteriors
+00:04 17Mb    0.093% Consistency (1/2)00:05 18Mb     15.1% Consistency (1/2)00:06 20Mb     35.3% Consistency (1/2)00:07 23Mb     62.6% Consistency (1/2)00:07 26Mb    100.0% Consistency (1/2)
+00:07 26Mb    0.093% Consistency (2/2)00:08 26Mb      1.8% Consistency (2/2)00:09 26Mb     21.2% Consistency (2/2)00:10 26Mb     42.6% Consistency (2/2)00:11 26Mb     71.4% Consistency (2/2)00:11 26Mb    100.0% Consistency (2/2)
+00:11 26Mb      2.2% UPGMA5           00:11 26Mb    100.0% UPGMA5
+00:11 26Mb      1.0% Refining00:11 28Mb    100.0% Refining

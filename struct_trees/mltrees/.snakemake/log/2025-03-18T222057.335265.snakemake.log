@@ -1,0 +1,22 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job       count
+------  -------
+FX_all        1
+total         1
+
+Select jobs to execute...
+
+[Tue Mar 18 22:21:03 2025]
+localrule FX_all:
+    jobid: 0
+    reason: Forced execution
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp, partition=cpu, time=00:45:00
+
+[Tue Mar 18 22:21:11 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2025-03-18T222057.335265.snakemake.log

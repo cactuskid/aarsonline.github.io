@@ -1,0 +1,66 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+Select jobs to execute...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+
+[Tue Mar 18 22:51:32 2025]
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: CRIMVLG/alntmscore_1_exp_struct_tree.nwk
+    output: CRIMVLG/alntmscore_1_exp_struct_tree.PP.nwk
+    log: CRIMVLG/logs/alntmscore_1_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: CRIMVLG/alntmscore_1_exp_struct_tree.PP.nwk
+    wildcards: folder=CRIMVLG, mattype=alntmscore, alntype=1, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038260, partition=cpu, time=00:45:00
+rule BM_postprocess:
+    input: CRIMVLG/lddt_1_raw_struct_tree.nwk
+    output: CRIMVLG/lddt_1_raw_struct_tree.PP.nwk
+    log: CRIMVLG/logs/lddt_1_raw_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: CRIMVLG/lddt_1_raw_struct_tree.PP.nwk
+    wildcards: folder=CRIMVLG, mattype=lddt, alntype=1, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038261, partition=cpu, time=00:45:00
+
+
+
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: CRIMVLG/fident_1_exp_struct_tree.nwk
+    output: CRIMVLG/fident_1_exp_struct_tree.PP.nwk
+    log: CRIMVLG/logs/fident_1_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: CRIMVLG/fident_1_exp_struct_tree.PP.nwk
+    wildcards: folder=CRIMVLG, mattype=fident, alntype=1, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038262, partition=cpu, time=00:45:00
+
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp19denttc.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpll1yizwc.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp_d0tceya.postprocess.py
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree

@@ -1,0 +1,191 @@
+IQ-TREE 2.2.3 COVID-edition built Aug 13 2023
+
+Partition file name: c2/templateXAA.nx
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 42
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 47 taxa with 2 partitions and 415 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	47	228	214	164	41	41	part1
+   2	AA	47	187	187	173	1	1	part2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  LG+I+G4        0.7663  LG+I{0.00534483}+G4{2.88203}
+   2  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/3diphy/3DI_substmat/3di_substmat.txt+F+I 1.2849  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/3diphy/3DI_substmat/3di_substmat.txt+F+I{1.00026e-06}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -29543.0908 (s.e. 848.6615)
+Unconstrained log-likelihood (without tree): -2190.9714
+Number of free parameters (#branches + #model parameters): 114
+Akaike information criterion (AIC) score: 59314.1817
+Corrected Akaike information criterion (AICc) score: 59401.5817
+Bayesian information criterion (BIC) score: 59773.4054
+
+Total tree length (sum of branch lengths): 71.1605
+Sum of internal branch lengths: 14.4400 (20.2921% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ArgRS_AF_Bact_Corynebacterium_ulcerans_809_gene75260071' is drawn at root
+
++------ArgRS_AF_Bact_Corynebacterium_ulcerans_809_gene75260071
+|
+|  +-----ArgRS_AF_Bact_Cupriavidus_taiwanensis_LMG_19424_gene29762022
++--|
+|  |                                                +---------CysRS_AF_Arch_Methanospirillum_hungatei_JF-1_gene3922979
+|  |                                             +--|
+|  |                                             |  +----CysRS_PDB_Bact_E_coli_1LI5
+|  |                                          +--|
+|  |                                          |  +-------CysRS_AF_Bact_Bordetella_avium_197N_gene41394405
+|  |                                       +--|
+|  |                                       |  |     +--------CysRS_AF_Bact_Porphyromonas_gingivalis_ATCC_33277_gene29256960
+|  |                                       |  |  +--|
+|  |                                       |  |  |  +----------CysRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54200571
+|  |                                       |  +--|
+|  |                                       |     |  +--------CysRS_AF_Arch_Pyrobaculum_ferrireducens_gene11593896
+|  |                                       |     +--|
+|  |                                       |        +---------CysRS_AF_Arch_Aciduliprofundum_boonei_T469_gene8827372
+|  |                                    +--|
+|  |                                    |  +-------CysRS_AF_Bact_Lactobacillus_amylovorus_GRL1118_gene66523130
+|  |                                 +--|
+|  |                                 |  +-----------CysRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13696907
+|  |                              +--|
+|  |                              |  +---------CysRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29673427
+|  |                           +--|
+|  |                           |  |  +-----------CysRS_PDB_Bact_M_smegmatis_3C8Z
+|  |                           |  +--|
+|  |                           |     |  +--------CysRS_AF_Euk_Micromonas_commoda_gene8246535
+|  |                           |     +--|
+|  |                           |        +-----------------------CysRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57101512
+|  |                        +--|
+|  |                        |  |         +---------------------ArgRS_AF_Mito_Caenorhabditis_elegans_gene174023
+|  |                        |  |      +--|
+|  |                        |  |      |  +---------CysRS_AF_Euk_Cyanidioschyzon_merolae_strain_10D_gene16993418
+|  |                        |  |  +---|
+|  |                        |  |  |   |        +-----CysRS_AF_Euk_Homo_sapiens_gene833
+|  |                        |  |  |   |     +--|
+|  |                        |  |  |   |     |  +--CysRS_AF_Euk_Drosophila_melanogaster_gene36784
+|  |                        |  |  |   |  +--|
+|  |                        |  |  |   |  |  +-----------CysRS_AF_Mito_Saccharomyces_cerevisiae_S288C_gene855474
+|  |                        |  |  |   +--|
+|  |                        |  |  |      +-------------------CysRS_AF_Vir_Megavirus_chiliensis_gene11257271
+|  |                        |  +--|
+|  |                        |     |  +----------CysRS_AF_Bact_Mycobacterium_canettii_CIPT_140010059_gene45427568
+|  |                        |     +--|
+|  |                        |        |     +--CysRS_AF_Mito_Morone_saxatilis_gene118339815
+|  |                        |        +-----|
+|  |                        |              +--CysRS_AF_Mito_Homo_sapiens_gene79587
+|  |                +-------|
+|  |                |       +---------CysRS_AF_Bact_Treponema_pallidum_subsp_pertenue_str_SamoaD_gene57878631
+|  |        +-------|
+|  |        |       +------------------CysRS_AF_Euk_Arabidopsis_thaliana_gene833874
+|  |     +--|
+|  |     |  |                 +--ArgRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54199571
+|  |     |  |              +--|
+|  |     |  |              |  +--ArgRS_AF_Euk_Paulinella_chromatophora_gene6481434
+|  |     |  |           +--|
+|  |     |  |           |  +-----ArgRS_AF_Euk_Thalassiosira_pseudonana_CCMP1335_gene7449555
+|  |     |  |        +--|
+|  |     |  |        |  |     +--------------ArgRS_AF_Vir_Megavirus_chiliensis_gene11257368
+|  |     |  |        |  |  +--|
+|  |     |  |        |  |  |  |    +--ArgRS_AF_Euk_Polyodon_spathula_gene121324634
+|  |     |  |        |  |  |  +----|
+|  |     |  |        |  |  |       +--ArgRS_AF_Euk_Homo_sapiens_gene5917
+|  |     |  |        |  +--|
+|  |     |  |        |     |  +----ArgRS_AF_Euk_Micromonas_commoda_gene8250062
+|  |     |  |        |     +--|
+|  |     |  |        |        +------ArgRS_AF_Bact_Chlamydia_psittaci_6BC_gene12242456
+|  |     |  |     +--|
+|  |     |  |     |  +------ArgRS_AF_Bact_Escherichia_coli_O157_H7_str._Sakai_gene912519
+|  |     |  |  +--|
+|  |     |  |  |  |      +--ArgRS_PDB_Euk_S_cerevisiae_1BS2
+|  |     |  |  |  +------|
+|  |     |  |  |         +-------ArgRS_AF_Mito_Homo_sapiens_gene57038
+|  |     |  +--|
+|  |     |     +------ArgRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29674021
+|  |  +--|
+|  |  |  |           +---ArgRS_PDB_Arch_2ZUF
+|  |  |  |        +--|
+|  |  |  |        |  +--------ArgRS_AF_Arch_Methanothermococcus_okinawensis_IH1_gene10773248
+|  |  |  |     +--|
+|  |  |  |     |  |  +--------ArgRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13697696
+|  |  |  |     |  +--|
+|  |  |  |     |     +-----ArgRS_AF_Arch_Candidatus_Korarchaeum_cryptofilum_OPF8_gene6093502
+|  |  |  |  +--|
+|  |  |  |  |  +------ArgRS_PDB_Bact_1IQ0
+|  |  |  +--|
+|  |  |     +---------------------ArgRS_AF_Arch_Desulfurococcus_mucosus_DSM_2162_gene10153309
+|  +--|
+|     |  +-----------ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57100855
+|     +--|
+|        +--------ArgRS_AF_Bact_Brachyspira_pilosicoli_95_1000_gene56439668
+|
++----ArgRS_AF_Bact_Anoxybacillus_flavithermus_WK1_gene7039015
+
+Tree in newick format:
+
+(ArgRS_AF_Bact_Corynebacterium_ulcerans_809_gene75260071:0.9096954977,(ArgRS_AF_Bact_Cupriavidus_taiwanensis_LMG_19424_gene29762022:0.7998986095,(((((((((((((CysRS_AF_Arch_Methanospirillum_hungatei_JF-1_gene3922979:1.3848909535,CysRS_PDB_Bact_E_coli_1LI5:0.7221039600):0.0795697972,CysRS_AF_Bact_Bordetella_avium_197N_gene41394405:1.0916848376):0.1474435606,((CysRS_AF_Bact_Porphyromonas_gingivalis_ATCC_33277_gene29256960:1.1767787332,CysRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54200571:1.4422569990):0.2910646741,(CysRS_AF_Arch_Pyrobaculum_ferrireducens_gene11593896:1.2395140108,CysRS_AF_Arch_Aciduliprofundum_boonei_T469_gene8827372:1.3497284591):0.4807481309):0.1352207782):0.2638709569,CysRS_AF_Bact_Lactobacillus_amylovorus_GRL1118_gene66523130:1.1508370391):0.1463380585,CysRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13696907:1.6274128366):0.2079622224,CysRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29673427:1.3120239237):0.2906084771,(CysRS_PDB_Bact_M_smegmatis_3C8Z:1.5656516151,(CysRS_AF_Euk_Micromonas_commoda_gene8246535:1.2124504032,CysRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57101512:3.2142099517):0.0803444339):0.3744941667):0.2414149493,(((ArgRS_AF_Mito_Caenorhabditis_elegans_gene174023:2.8694905737,CysRS_AF_Euk_Cyanidioschyzon_merolae_strain_10D_gene16993418:1.4062429683):0.5060977111,(((CysRS_AF_Euk_Homo_sapiens_gene833:0.8665435432,CysRS_AF_Euk_Drosophila_melanogaster_gene36784:0.3606105531):0.4189878073,CysRS_AF_Mito_Saccharomyces_cerevisiae_S288C_gene855474:1.5998197482):0.3776378207,CysRS_AF_Vir_Megavirus_chiliensis_gene11257271:2.6665540901):0.3322691251):0.6005323815,(CysRS_AF_Bact_Mycobacterium_canettii_CIPT_140010059_gene45427568:1.5199614454,(CysRS_AF_Mito_Morone_saxatilis_gene118339815:0.4320355270,CysRS_AF_Mito_Homo_sapiens_gene79587:0.4776713039):0.7938139395):0.2805220498):0.4185293766):0.3139908184,CysRS_AF_Bact_Treponema_pallidum_subsp_pertenue_str_SamoaD_gene57878631:1.3700611102):1.1506707139,CysRS_AF_Euk_Arabidopsis_thaliana_gene833874:2.5655163823):1.0591247439,((((((ArgRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54199571:0.3427368889,ArgRS_AF_Euk_Paulinella_chromatophora_gene6481434:0.3901460967):0.3751040448,ArgRS_AF_Euk_Thalassiosira_pseudonana_CCMP1335_gene7449555:0.8206394632):0.0926306563,((ArgRS_AF_Vir_Megavirus_chiliensis_gene11257368:2.0286405365,(ArgRS_AF_Euk_Polyodon_spathula_gene121324634:0.0867900662,ArgRS_AF_Euk_Homo_sapiens_gene5917:0.1299002260):0.7560385072):0.3421965661,(ArgRS_AF_Euk_Micromonas_commoda_gene8250062:0.6962990701,ArgRS_AF_Bact_Chlamydia_psittaci_6BC_gene12242456:0.9423798068):0.1781883310):0.2699288599):0.1360010845,ArgRS_AF_Bact_Escherichia_coli_O157_H7_str._Sakai_gene912519:0.9274318336):0.0844882793,(ArgRS_PDB_Euk_S_cerevisiae_1BS2:0.4773833699,ArgRS_AF_Mito_Homo_sapiens_gene57038:1.1276250376):1.0125613405):0.1949368509,ArgRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29674021:1.0279627719):0.1958601650):0.0680870026,((((ArgRS_PDB_Arch_2ZUF:0.6249187630,ArgRS_AF_Arch_Methanothermococcus_okinawensis_IH1_gene10773248:1.2313456593):0.2070052002,(ArgRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13697696:1.1738417684,ArgRS_AF_Arch_Candidatus_Korarchaeum_cryptofilum_OPF8_gene6093502:0.8652158694):0.2636318584):0.0908193542,ArgRS_PDB_Bact_1IQ0:1.0120068182):0.0933701999,ArgRS_AF_Arch_Desulfurococcus_mucosus_DSM_2162_gene10153309:2.9179271455):0.1022515807):0.4920333338,(ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57100855:1.6586791005,ArgRS_AF_Bact_Brachyspira_pilosicoli_95_1000_gene56439668:1.2352185469):0.1909128583):0.1653555335):0.1373316656,ArgRS_AF_Bact_Anoxybacillus_flavithermus_WK1_gene7039015:0.6697775732);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t c2/templateXAA.nx.treefile -p c2/templateXAA.nx.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Mar 18 22:40:46 2025
+Total CPU time used: 161.99 seconds (0h:2m:41s)
+Total wall-clock time used: 131.083 seconds (0h:2m:11s)
+

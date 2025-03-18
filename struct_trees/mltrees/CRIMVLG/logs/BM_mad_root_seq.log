@@ -1,0 +1,46 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:37:35 2025]
+rule BM_mad_root_seq:
+    input: CRIMVLG/sequences.aln.muscle.fst.nwk
+    output: CRIMVLG/sequences.aln.muscle.fst.nwk.rooted
+    log: CRIMVLG/logs/madrootseq.muscle.log
+    jobid: 0
+    reason: Missing output files: CRIMVLG/sequences.aln.muscle.fst.nwk.rooted
+    wildcards: folder=CRIMVLG, aligner=muscle
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037508, partition=cpu, time=00:45:00
+
+/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/madroot/mad  CRIMVLG/sequences.aln.muscle.fst.nwk
+Activating conda environment: foldtree
+
+MAD phylogenetic rooting
+
+Analyzing file 'CRIMVLG/sequences.aln.muscle.fst.nwk'...
+>> Warning: 1 tiny branch lengths (<10^-6) were converted to 0. (Override with '-t'.)
+>> [MAD=0.282_AI=0.996_CCV=23.5%_N=1/1]
+
+Minimal ancestor deviation, MAD = 0.282
+           Ambiguity index,  AI = 0.996
+                  Clock CV, CCV = 23.5%
+Rooted tree written to 'CRIMVLG/sequences.aln.muscle.fst.nwk.rooted'
+
+
+    - Please cite DOI:10.1038/s41559-017-0193
+
+[Tue Mar 18 22:37:40 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/

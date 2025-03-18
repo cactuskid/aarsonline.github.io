@@ -1,0 +1,77 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:35:14 2025]
+rule BM_foldseek2distmat:
+    input: c2/allvall_0.csv
+    output: c2/fident_0_raw_fastmemat.txt, c2/alntmscore_0_raw_fastmemat.txt, c2/lddt_0_raw_fastmemat.txt, c2/fident_0_exp_fastmemat.txt, c2/alntmscore_0_exp_fastmemat.txt, c2/lddt_0_exp_fastmemat.txt
+    log: c2/logs/0_foldseek2distmat.log
+    jobid: 0
+    reason: Missing output files: c2/alntmscore_0_exp_fastmemat.txt, c2/lddt_0_exp_fastmemat.txt, c2/alntmscore_0_raw_fastmemat.txt, c2/fident_0_raw_fastmemat.txt, c2/lddt_0_raw_fastmemat.txt, c2/fident_0_exp_fastmemat.txt
+    wildcards: folder=c2, alntype=0
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037372, partition=cpu, time=00:45:00
+
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp8oebyy8u.foldseekres2distmat.py
+Activating conda environment: foldtree
+                                                  0   ...      16
+0  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...  1.0000
+1  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...  0.9096
+2  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...  0.9009
+3  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...  0.8758
+4  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...  0.8981
+
+[5 rows x 17 columns]
+                                                  query  ... alntmscore
+0     ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...     1.0000
+1     ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...     0.9096
+2     ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...     0.9009
+3     ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...     0.8758
+4     ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_g...  ...     0.8981
+...                                                 ...  ...        ...
+2204  ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sa...  ...     0.4150
+2205  ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sa...  ...     0.3005
+2206  ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sa...  ...     0.4059
+2207  ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sa...  ...     0.5090
+2208  ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sa...  ...     0.6120
+
+[2209 rows x 17 columns]
+[[0.     0.485  0.29   ... 0.3175 0.514  0.498 ]
+ [0.485  0.     0.421  ... 0.46   0.403  0.337 ]
+ [0.29   0.421  0.     ... 0.273  0.573  0.538 ]
+ ...
+ [0.3175 0.46   0.273  ... 0.     0.518  0.4825]
+ [0.514  0.403  0.573  ... 0.518  0.     0.3875]
+ [0.498  0.337  0.538  ... 0.4825 0.3875 0.    ]] 0.5925 0.0
+[[0.      0.4633  0.074   ... 0.11635 0.64805 0.5421 ]
+ [0.4633  0.      0.5185  ... 0.48135 0.319   0.3502 ]
+ [0.074   0.5185  0.      ... 0.0689  0.5764  0.511  ]
+ ...
+ [0.11635 0.48135 0.0689  ... 0.      0.6772  0.5415 ]
+ [0.64805 0.319   0.5764  ... 0.6772  0.      0.41525]
+ [0.5421  0.3502  0.511   ... 0.5415  0.41525 0.     ]] 0.78325 0.0
+[[0.      0.51715 0.14735 ... 0.20495 0.6243  0.5456 ]
+ [0.51715 0.      0.54085 ... 0.51295 0.3354  0.39565]
+ [0.14735 0.54085 0.      ... 0.14175 0.58695 0.54995]
+ ...
+ [0.20495 0.51295 0.14175 ... 0.      0.6608  0.61295]
+ [0.6243  0.3354  0.58695 ... 0.6608  0.      0.357  ]
+ [0.5456  0.39565 0.54995 ... 0.61295 0.357   0.     ]] 0.74915 0.0
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp8oebyy8u.foldseekres2distmat.py
+[Tue Mar 18 22:35:20 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/

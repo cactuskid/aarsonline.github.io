@@ -1,0 +1,88 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 100
+Job stats:
+job                               count
+------------------------------  -------
+BM_ML_calcfident_distributions       12
+BM_ML_cross_alns                      3
+BM_ML_foldseek_createdb               3
+BM_ML_iqtree_template                 6
+BM_ML_iqtreex                         6
+BM_ML_mad_root_postML                 6
+BM_ML_mad_root_structML               6
+BM_ML_mafft_seq                       3
+BM_ML_mafft_textaln                   3
+BM_ML_scrape_alns                     3
+BM_ML_treescore                       6
+BM_calc_tax_score                    36
+BM_calc_tax_score_iq                  3
+BM_calc_tax_score_seq                 3
+BM_dl_ids_sequences                   3
+BM_dl_ids_structs                     3
+BM_fasttree                           3
+BM_foldseek2distmat                   6
+BM_foldseek_allvall_0                 3
+BM_foldseek_allvall_1                 3
+BM_iqtree                             3
+BM_mad_root_iq                        3
+BM_mad_root_seq                       3
+BM_mad_root_struct                   36
+BM_muscle                             3
+BM_plddt                              3
+BM_postprocess                       36
+BM_quicktree                         36
+FX_aln2distmat                        6
+FX_mad_root_post                      6
+FX_mad_root_struct                    6
+FX_postprocess                        6
+FX_quicktree                          6
+FX_treescore                          6
+IX_iqtree3di                          3
+IX_mad_root_postML                    3
+IX_mad_root_structML                  3
+IX_treescore                          3
+all                                   1
+total                               292
+
+Select jobs to execute...
+
+[Tue Mar 18 22:31:53 2025]
+rule BM_dl_ids_sequences:
+    input: c2/identifiers.txt
+    output: c2/sequence_dataset.csv
+    log: c2/logs/dlsequences.log
+    jobid: 9
+    reason: Forced execution
+    wildcards: folder=c2
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, partition=cpu, time=00:45:00
+
+Submitted job 9 with external jobid '51037342'.
+
+[Tue Mar 18 22:31:53 2025]
+rule BM_dl_ids_sequences:
+    input: CRIMVLG/identifiers.txt
+    output: CRIMVLG/sequence_dataset.csv
+    log: CRIMVLG/logs/dlsequences.log
+    jobid: 31
+    reason: Forced execution
+    wildcards: folder=CRIMVLG
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, partition=cpu, time=00:45:00
+
+Submitted job 31 with external jobid '51037343'.
+
+[Tue Mar 18 22:31:53 2025]
+rule BM_dl_ids_sequences:
+    input: c1/identifiers.txt
+    output: c1/sequence_dataset.csv
+    log: c1/logs/dlsequences.log
+    jobid: 20
+    reason: Forced execution
+    wildcards: folder=c1
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=<TBD>, partition=cpu, time=00:45:00
+
+Submitted job 20 with external jobid '51037344'.
+Terminating processes on user request, this might take some time.
+No --cluster-cancel given. Will exit after finishing currently running jobs.
+Cancelling snakemake on user request.

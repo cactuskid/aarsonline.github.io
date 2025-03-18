@@ -1,0 +1,8 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+MissingInputException in rule scrape_alns in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/ML3ditree, line 247:
+Missing input files for rule scrape_alns:
+    output: c2/sequences.fst, c2/seq3di.fasta
+    wildcards: folder=c2
+    affected files:
+        c2/allvall_1.csv

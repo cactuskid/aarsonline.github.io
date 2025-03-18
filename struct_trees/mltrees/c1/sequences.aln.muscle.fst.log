@@ -1,0 +1,228 @@
+IQ-TREE multicore version 2.2.3 COVID-edition for Linux 64-bit built Aug 13 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    dna030 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree -s c1/sequences.aln.muscle.fst -redo -m LG+I+G -seed 42 -nt AUTO -n 50
+Seed:    42 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Mar 18 22:38:16 2025
+Kernel:  AVX+FMA - auto-detect threads (8 CPU cores detected)
+
+Reading alignment file c1/sequences.aln.muscle.fst ... Fasta format detected
+Reading fasta file: done in 0.000315501 secs using 63.39% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000219802 secs using 215.6% CPU
+Alignment has 47 sequences with 213 columns, 207 distinct patterns
+148 parsimony-informative, 17 singleton sites, 48 constant sites
+WARNING: Some sequence names are changed as follows:
+ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519 -> ArgRS_AF_Bact_Escherichia_coli_O157_H7_str._Sakai_gene912519
+
+                                                                               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.46264e-05 secs using 47.86% CPU
+   1  CysRS_AF_Arch_Aciduliprofundum_boonei_T469_gene8827372                          47.89%    passed     36.16%
+   2  ArgRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13697696                  32.86%    passed     78.44%
+   3  CysRS_AF_Bact_Treponema_pallidum_subsp_pertenue_str_SamoaD_gene57878631         43.66%    failed      0.01%
+   4  CysRS_PDB_Bact_M_smegmatis_3C8Z                                                 63.38%    failed      2.58%
+   5  ArgRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54199571   33.33%    passed     91.85%
+   6  ArgRS_AF_Euk_Homo_sapiens_gene5917                                              27.70%    passed     13.04%
+   7  CysRS_AF_Mito_Homo_sapiens_gene79587                                            39.44%    passed     24.84%
+   8  CysRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29673427               46.01%    failed      0.04%
+   9  ArgRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29674021               31.46%    passed     89.13%
+  10  CysRS_AF_Euk_Drosophila_melanogaster_gene36784                                  38.50%    passed     72.64%
+  11  ArgRS_AF_Arch_Candidatus_Korarchaeum_cryptofilum_OPF8_gene6093502               33.33%    passed     72.24%
+  12  CysRS_AF_Euk_Arabidopsis_thaliana_gene833874                                    36.15%    passed      7.59%
+  13  ArgRS_AF_Vir_Megavirus_chiliensis_gene11257368                                  31.46%    failed      0.20%
+  14  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57100855                       34.74%    failed      0.32%
+  15  ArgRS_AF_Arch_Methanothermococcus_okinawensis_IH1_gene10773248                  30.05%    failed      0.03%
+  16  ArgRS_AF_Mito_Homo_sapiens_gene57038                                            32.86%    passed     23.86%
+  17  ArgRS_AF_Euk_Thalassiosira_pseudonana_CCMP1335_gene7449555                      30.52%    passed     92.47%
+  18  ArgRS_AF_Bact_Brachyspira_pilosicoli_95_1000_gene56439668                       30.52%    passed      5.07%
+  19  CysRS_AF_Bact_Mycobacterium_canettii_CIPT_140010059_gene45427568                51.17%    failed      4.05%
+  20  CysRS_AF_Bact_Lactobacillus_amylovorus_GRL1118_gene66523130                     44.13%    passed     47.67%
+  21  CysRS_AF_Vir_Megavirus_chiliensis_gene11257271                                  45.07%    failed      0.00%
+  22  CysRS_AF_Mito_Morone_saxatilis_gene118339815                                    39.44%    passed     36.16%
+  23  CysRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57101512                       58.69%    failed      0.03%
+  24  ArgRS_AF_Bact_Corynebacterium_ulcerans_809_gene75260071                         29.58%    passed     25.29%
+  25  ArgRS_AF_Bact_Chlamydia_psittaci_6BC_gene12242456                               34.27%    passed     67.15%
+  26  CysRS_AF_Bact_Bordetella_avium_197N_gene41394405                                53.52%    passed      6.16%
+  27  ArgRS_AF_Euk_Polyodon_spathula_gene121324634                                    27.70%    passed     10.84%
+  28  CysRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13696907                  45.54%    passed     48.77%
+  29  ArgRS_AF_Mito_Caenorhabditis_elegans_gene174023                                 31.46%    passed     30.90%
+  30  CysRS_AF_Bact_Porphyromonas_gingivalis_ATCC_33277_gene29256960                  46.48%    passed     39.69%
+  31  ArgRS_PDB_Bact_1IQ0                                                             31.46%    passed     12.26%
+  32  CysRS_AF_Euk_Homo_sapiens_gene833                                               38.03%    passed     87.50%
+  33  CysRS_AF_Mito_Saccharomyces_cerevisiae_S288C_gene855474                         39.44%    passed     44.60%
+  34  CysRS_AF_Euk_Cyanidioschyzon_merolae_strain_10D_gene16993418                    38.97%    failed      0.17%
+  35  ArgRS_AF_Euk_Micromonas_commoda_gene8250062                                     33.80%    passed     71.93%
+  36  ArgRS_AF_Bact_Escherichia_coli_O157_H7_str._Sakai_gene912519                    31.92%    passed     96.81%
+  37  CysRS_AF_Arch_Pyrobaculum_ferrireducens_gene11593896                            57.75%    passed     16.95%
+  38  ArgRS_PDB_Arch_2ZUF                                                             29.58%    passed     69.30%
+  39  CysRS_AF_Euk_Micromonas_commoda_gene8246535                                     34.74%    failed      2.01%
+  40  ArgRS_AF_Bact_Anoxybacillus_flavithermus_WK1_gene7039015                        31.92%    passed     86.77%
+  41  CysRS_PDB_Bact_E_coli_1LI5                                                      60.56%    passed     78.05%
+  42  CysRS_AF_Arch_Methanospirillum_hungatei_JF-1_gene3922979                        59.15%    passed      9.14%
+  43  CysRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54200571   33.33%    passed      6.79%
+  44  ArgRS_PDB_Euk_S_cerevisiae_1BS2                                                 31.46%    passed     68.66%
+  45  ArgRS_AF_Bact_Cupriavidus_taiwanensis_LMG_19424_gene29762022                    27.70%    failed      0.04%
+  46  ArgRS_AF_Arch_Desulfurococcus_mucosus_DSM_2162_gene10153309                     25.82%    passed     24.63%
+  47  ArgRS_AF_Euk_Paulinella_chromatophora_gene6481434                               33.33%    passed     95.34%
+WARNING: 7 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                           38.51%  12 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 9.04799e-05 secs using 400.1% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.007 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+34 trees examined
+Threads: 1 / Time: 8.110 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -14684
+Threads: 2 / Time: 5.782 sec / Speedup: 1.402 / Efficiency: 70% / LogL: -14684
+Threads: 3 / Time: 4.378 sec / Speedup: 1.852 / Efficiency: 62% / LogL: -14684
+Threads: 4 / Time: 4.363 sec / Speedup: 1.859 / Efficiency: 46% / LogL: -14684
+Determining AUTO threadcount: done in 22.633 secs using 220.3% CPU
+BEST NUMBER OF THREADS: 3
+
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.000, 2.088 / LogL: -13391.859
+Init pinv, alpha: 0.025, 1.000 / Estimate: 0.000, 2.095 / LogL: -13391.849
+Init pinv, alpha: 0.050, 1.000 / Estimate: 0.000, 2.095 / LogL: -13391.853
+Init pinv, alpha: 0.075, 1.000 / Estimate: 0.000, 2.096 / LogL: -13391.857
+Init pinv, alpha: 0.100, 1.000 / Estimate: 0.000, 2.096 / LogL: -13391.861
+Init pinv, alpha: 0.125, 1.000 / Estimate: 0.000, 2.096 / LogL: -13391.865
+Init pinv, alpha: 0.150, 1.000 / Estimate: 0.000, 2.100 / LogL: -13391.844
+Init pinv, alpha: 0.175, 1.000 / Estimate: 0.000, 2.100 / LogL: -13391.845
+Init pinv, alpha: 0.200, 1.000 / Estimate: 0.000, 2.100 / LogL: -13391.846
+Init pinv, alpha: 0.225, 1.000 / Estimate: 0.000, 2.100 / LogL: -13391.847
+Optimal pinv,alpha: 0.000, 2.100 / LogL: -13391.844
+
+Parameters optimization took 3.386 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.109782 secs using 299% CPU
+Computing ML distances took 0.109898 sec (of wall-clock time) 0.330323 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000229851 secs
+Constructing RapidNJ tree: done in 0.00807984 secs using 67.86% CPU
+Computing RapidNJ tree took 0.008465 sec (of wall-clock time) 0.005492 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -13379.533
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.681 second
+Computing log-likelihood of 98 initial trees ... 1.571 seconds
+Current best score: -13379.533
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.351884 secs using 297.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -13327.877
+Optimizing NNI: done in 0.445922 secs using 296.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -13320.377
+Optimizing NNI: done in 0.3788 secs using 297.9% CPU
+Optimizing NNI: done in 0.37479 secs using 296.8% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 4: -13315.939
+Optimizing NNI: done in 0.359486 secs using 297.2% CPU
+Optimizing NNI: done in 0.391823 secs using 297.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 6: -13313.159
+Optimizing NNI: done in 0.508439 secs using 297.8% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 7: -13309.648
+Optimizing NNI: done in 0.425677 secs using 295.8% CPU
+Optimizing NNI: done in 0.439817 secs using 295.8% CPU
+Optimizing NNI: done in 0.527431 secs using 298.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 10: -13309.228
+Iteration 10 / LogL: -13309.228 / Time: 0h:0m:33s
+Optimizing NNI: done in 0.460268 secs using 297.1% CPU
+Optimizing NNI: done in 0.452991 secs using 297.4% CPU
+Optimizing NNI: done in 0.423797 secs using 296.9% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 13: -13308.653
+Optimizing NNI: done in 0.351312 secs using 297.6% CPU
+Optimizing NNI: done in 0.478463 secs using 297.9% CPU
+Optimizing NNI: done in 0.575511 secs using 297.4% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 16: -13307.093
+Optimizing NNI: done in 0.430117 secs using 297.3% CPU
+Optimizing NNI: done in 0.390566 secs using 297.3% CPU
+Optimizing NNI: done in 0.463656 secs using 297.4% CPU
+Optimizing NNI: done in 0.503102 secs using 297.4% CPU
+Iteration 20 / LogL: -13321.986 / Time: 0h:0m:37s
+Finish initializing candidate tree set (20)
+Current best tree score: -13307.093 / CPU time: 11.521
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.293492 secs using 296.3% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 21: -13306.307
+Optimizing NNI: done in 0.374442 secs using 297.7% CPU
+Optimizing NNI: done in 0.375674 secs using 295.7% CPU
+Optimizing NNI: done in 0.30403 secs using 298.3% CPU
+Optimizing NNI: done in 0.390628 secs using 297.7% CPU
+Optimizing NNI: done in 0.362186 secs using 297.8% CPU
+Optimizing NNI: done in 0.421313 secs using 297.9% CPU
+Optimizing NNI: done in 0.266433 secs using 297.9% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -13305.896
+Optimizing NNI: done in 0.254111 secs using 297% CPU
+Optimizing NNI: done in 0.3488 secs using 297.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -13305.131
+Iteration 30 / LogL: -13305.131 / Time: 0h:0m:41s (0h:0m:28s left)
+Optimizing NNI: done in 0.271793 secs using 297.3% CPU
+Optimizing NNI: done in 0.297817 secs using 296.5% CPU
+Optimizing NNI: done in 0.270697 secs using 297.8% CPU
+Optimizing NNI: done in 0.298682 secs using 297.9% CPU
+Optimizing NNI: done in 0.316412 secs using 296.5% CPU
+Optimizing NNI: done in 0.368382 secs using 296.4% CPU
+Optimizing NNI: done in 0.323541 secs using 295.9% CPU
+Optimizing NNI: done in 0.227997 secs using 296.8% CPU
+Optimizing NNI: done in 0.33091 secs using 298.2% CPU
+Optimizing NNI: done in 0.257573 secs using 296.2% CPU
+Iteration 40 / LogL: -13305.354 / Time: 0h:0m:44s (0h:0m:11s left)
+Optimizing NNI: done in 0.328693 secs using 297.3% CPU
+Optimizing NNI: done in 0.258892 secs using 296% CPU
+Optimizing NNI: done in 0.255777 secs using 297.2% CPU
+Optimizing NNI: done in 0.363651 secs using 296.2% CPU
+Optimizing NNI: done in 0.265587 secs using 297.1% CPU
+Optimizing NNI: done in 0.230581 secs using 297.2% CPU
+Optimizing NNI: done in 0.333434 secs using 296.1% CPU
+Optimizing NNI: done in 0.399026 secs using 295.5% CPU
+Optimizing NNI: done in 0.35043 secs using 296.8% CPU
+Optimizing NNI: done in 0.305816 secs using 295.2% CPU
+Iteration 50 / LogL: -13316.382 / Time: 0h:0m:47s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 50 ITERATIONS / Time: 0h:0m:47s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -13305.131
+Optimal log-likelihood: -13305.131
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 2.128
+Parameters optimization took 1 rounds (0.043 sec)
+BEST SCORE FOUND : -13305.131
+Total tree length: 66.830
+
+Total number of iterations: 50
+CPU time used for tree search: 61.713 sec (0h:1m:1s)
+Wall-clock time used for tree search: 21.218 sec (0h:0m:21s)
+Total CPU time used: 122.577 sec (0h:2m:2s)
+Total wall-clock time used: 47.543 sec (0h:0m:47s)
+
+Analysis results written to: 
+  IQ-TREE report:                c1/sequences.aln.muscle.fst.iqtree
+  Maximum-likelihood tree:       c1/sequences.aln.muscle.fst.treefile
+  Likelihood distances:          c1/sequences.aln.muscle.fst.mldist
+  Screen log file:               c1/sequences.aln.muscle.fst.log
+
+Date and Time: Tue Mar 18 22:39:04 2025

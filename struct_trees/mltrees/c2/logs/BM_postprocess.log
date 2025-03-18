@@ -1,0 +1,20 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: c2/alntmscore_1_exp_struct_tree.nwk
+    output: c2/alntmscore_1_exp_struct_tree.PP.nwk
+    log: c2/logs/alntmscore_1_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c2/alntmscore_1_exp_struct_tree.PP.nwk
+    wildcards: folder=c2, mattype=alntmscore, alntype=1, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038259, partition=cpu, time=00:45:00
+
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: foldtree

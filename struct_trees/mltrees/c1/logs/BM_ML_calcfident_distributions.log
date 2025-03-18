@@ -1,0 +1,48 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:37:35 2025]
+rule BM_ML_calcfident_distributions:
+    input: c1/aln3di_AA.fasta
+    output: c1/alnfident_dist_3di_AA.json
+    log: c1/logs/alnfident_dist3di_AA.log
+    jobid: 0
+    reason: Missing output files: c1/alnfident_dist_3di_AA.json
+    wildcards: folder=c1, restype=3di, alntype=AA
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037492, partition=cpu, time=00:45:00
+
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp17jccg99.calcfident_distributions.py
+Activating conda environment: foldtree
+c1/alnAA_3di.fasta DescribeResult(nobs=1081, minmax=(0.05263157894736842, 0.6359649122807017), mean=0.18313533602739504, variance=0.0057506304825055725, skewness=1.222197461561326, kurtosis=1.6891317621152444)
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp5664iq_g.calcfident_distributions.py
+c1/aln3di_AA.fasta DescribeResult(nobs=1081, minmax=(0.0106951871657754, 0.6844919786096256), mean=0.0792987281532746, variance=0.0025286242815187247, skewness=2.9475641066089615, kurtosis=21.245116058476288)
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp17jccg99.calcfident_distributions.py
+[Tue Mar 18 22:37:40 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+[Tue Mar 18 22:37:42 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/

@@ -1,0 +1,4 @@
+KeyError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 32:
+'foldseek_path'
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/ML3ditree", line 21, in <module>
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 32, in <module>

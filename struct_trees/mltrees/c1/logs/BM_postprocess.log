@@ -1,0 +1,110 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Building DAG of jobs...
+Building DAG of jobs...
+Building DAG of jobs...
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+Using shell: /usr/bin/bash
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+
+Select jobs to execute...
+Select jobs to execute...
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: c1/alntmscore_1_raw_struct_tree.nwk
+    output: c1/alntmscore_1_raw_struct_tree.PP.nwk
+    log: c1/logs/alntmscore_1_raw_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/alntmscore_1_raw_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=alntmscore, alntype=1, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038266, partition=cpu, time=00:45:00
+
+
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: c1/alntmscore_1_exp_struct_tree.nwk
+    output: c1/alntmscore_1_exp_struct_tree.PP.nwk
+    log: c1/logs/alntmscore_1_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/alntmscore_1_exp_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=alntmscore, alntype=1, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038267, partition=cpu, time=00:45:00
+
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+
+[Tue Mar 18 22:51:32 2025]
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: c1/fident_1_raw_struct_tree.nwk
+    output: c1/fident_1_raw_struct_tree.PP.nwk
+    log: c1/logs/fident_1_raw_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/fident_1_raw_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=fident, alntype=1, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038265, partition=cpu, time=00:45:00rule BM_postprocess:
+    input: c1/lddt_1_exp_struct_tree.nwk
+    output: c1/lddt_1_exp_struct_tree.PP.nwk
+    log: c1/logs/lddt_1_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/lddt_1_exp_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=lddt, alntype=1, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038264, partition=cpu, time=00:45:00
+
+
+
+
+[Tue Mar 18 22:51:32 2025]
+rule BM_postprocess:
+    input: c1/lddt_1_raw_struct_tree.nwk
+    output: c1/lddt_1_raw_struct_tree.PP.nwk
+    log: c1/logs/lddt_1_raw_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/lddt_1_raw_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=lddt, alntype=1, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038263, partition=cpu, time=00:45:00
+
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp4mjctlac.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpkrlx9n95.postprocess.py
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp3nskj13x.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpzs9vv26y.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp21pzon02.postprocess.py
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree

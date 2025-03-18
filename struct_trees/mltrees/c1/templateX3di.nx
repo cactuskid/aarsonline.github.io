@@ -1,0 +1,9 @@
+
+#nexus
+
+
+begin sets;
+    charset part1 = c1/alnAA_3di.fasta: *;
+    charset part2 = c1/aln3di_3di.fasta: *;
+    charpartition mine = LG+I+G:part1, /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/3diphy/3DI_substmat/3di_substmat.txt+I+F:part2;
+end;

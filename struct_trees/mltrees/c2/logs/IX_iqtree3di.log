@@ -1,0 +1,250 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 10
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, time=60
+Select jobs to execute...
+
+[Tue Mar 18 22:37:35 2025]
+rule IX_iqtree3di:
+    input: c2/alnAA_3di.fasta, c2/sequence_dataset.csv
+    output: c2/alnAA_3di.fasta.treefile
+    log: c2/logs/3diAA_iqtree_3disingle.log
+    jobid: 0
+    reason: Missing output files: c2/alnAA_3di.fasta.treefile
+    wildcards: folder=c2
+    threads: 10
+    resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037506, partition=cpu, time=60
+
+iqtree  -s c2/alnAA_3di.fasta -m LG+I+G  -seed 42 -nt AUTO -n 50 
+Activating conda environment: foldtree
+IQ-TREE multicore version 2.2.3 COVID-edition for Linux 64-bit built Aug 13 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    dna039 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree -s c2/alnAA_3di.fasta -m LG+I+G -seed 42 -nt AUTO -n 50
+Seed:    42 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Mar 18 22:37:36 2025
+Kernel:  AVX+FMA - auto-detect threads (10 CPU cores detected)
+
+Reading alignment file c2/alnAA_3di.fasta ... Fasta format detected
+Reading fasta file: done in 0.000276279 secs using 27.15% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000241213 secs using 99.5% CPU
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 47 sequences with 228 columns, 207 distinct patterns
+163 parsimony-informative, 27 singleton sites, 38 constant sites
+WARNING: Some sequence names are changed as follows:
+ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519 -> ArgRS_AF_Bact_Escherichia_coli_O157_H7_str._Sakai_gene912519
+
+                                                                               Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.32946e-05 secs using 45.13% CPU
+   1  ArgRS_AF_Bact_Corynebacterium_ulcerans_809_gene75260071                         34.21%    passed     99.69%
+   2  ArgRS_AF_Bact_Cupriavidus_taiwanensis_LMG_19424_gene29762022                    32.46%    passed     98.37%
+   3  CysRS_AF_Arch_Methanospirillum_hungatei_JF-1_gene3922979                        61.84%    passed     99.74%
+   4  CysRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13696907                  49.12%    passed     65.68%
+   5  ArgRS_AF_Mito_Caenorhabditis_elegans_gene174023                                 35.96%    passed     99.03%
+   6  CysRS_AF_Euk_Cyanidioschyzon_merolae_strain_10D_gene16993418                    42.98%    passed     98.55%
+   7  ArgRS_PDB_Arch_2ZUF                                                             34.21%    passed     92.57%
+   8  CysRS_AF_Euk_Homo_sapiens_gene833                                               42.11%    passed     95.62%
+   9  CysRS_AF_Bact_Treponema_pallidum_subsp_pertenue_str_SamoaD_gene57878631         47.37%    passed     93.83%
+  10  ArgRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54199571   37.72%    passed     99.98%
+  11  ArgRS_PDB_Euk_S_cerevisiae_1BS2                                                 35.96%    passed     98.13%
+  12  ArgRS_AF_Mito_Homo_sapiens_gene57038                                            37.28%    passed     99.71%
+  13  CysRS_AF_Euk_Drosophila_melanogaster_gene36784                                  42.54%    passed     86.11%
+  14  CysRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29673427               49.56%    passed    100.00%
+  15  ArgRS_AF_Vir_Megavirus_chiliensis_gene11257368                                  35.96%    passed     24.43%
+  16  CysRS_AF_Bact_Porphyromonas_gingivalis_ATCC_33277_gene29256960                  50.00%    passed     49.76%
+  17  CysRS_AF_Arch_Pyrobaculum_ferrireducens_gene11593896                            60.53%    passed     99.41%
+  18  ArgRS_PDB_Bact_1IQ0                                                             35.96%    passed     59.57%
+  19  CysRS_AF_Bact_Bordetella_avium_197N_gene41394405                                56.58%    passed     46.36%
+  20  CysRS_AF_Bact_Mycobacterium_canettii_CIPT_140010059_gene45427568                54.39%    passed     65.18%
+  21  CysRS_AF_Arch_Aciduliprofundum_boonei_T469_gene8827372                          51.32%    failed      2.60%
+  22  ArgRS_AF_Bact_Streptobacillus_moniliformis_DSM_12112_gene29674021               35.96%    passed     40.82%
+  23  ArgRS_AF_Euk_Paulinella_chromatophora_gene6481434                               37.72%    passed     99.97%
+  24  ArgRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57100855                       39.04%    passed     96.55%
+  25  ArgRS_AF_Euk_Polyodon_spathula_gene121324634                                    32.46%    passed     60.50%
+  26  ArgRS_AF_Euk_Homo_sapiens_gene5917                                              32.46%    passed     57.33%
+  27  ArgRS_AF_Bact_Escherichia_coli_O157_H7_str._Sakai_gene912519                    36.40%    passed     99.97%
+  28  ArgRS_AF_Arch_Methanothermococcus_okinawensis_IH1_gene10773248                  34.65%    passed     76.79%
+  29  ArgRS_AF_Arch_Desulfurococcus_mucosus_DSM_2162_gene10153309                     30.70%    passed     90.65%
+  30  ArgRS_AF_Arch_Candidatus_Nitrosopumilus_sediminis_gene13697696                  37.28%    passed     95.96%
+  31  ArgRS_AF_Arch_Candidatus_Korarchaeum_cryptofilum_OPF8_gene6093502               37.72%    passed     32.19%
+  32  CysRS_PDB_Bact_M_smegmatis_3C8Z                                                 65.79%    passed     91.89%
+  33  CysRS_PDB_Bact_E_coli_1LI5                                                      63.16%    passed     99.88%
+  34  CysRS_AF_Vir_Megavirus_chiliensis_gene11257271                                  48.68%    passed     99.98%
+  35  CysRS_AF_Mito_Saccharomyces_cerevisiae_S288C_gene855474                         43.42%    passed     94.62%
+  36  CysRS_AF_Mito_Morone_saxatilis_gene118339815                                    43.42%    passed     78.91%
+  37  CysRS_AF_Euk_Micromonas_commoda_gene8246535                                     39.04%    passed     86.36%
+  38  CysRS_AF_Euk_Arabidopsis_thaliana_gene833874                                    40.35%    passed     89.14%
+  39  ArgRS_AF_Euk_Micromonas_commoda_gene8250062                                     38.16%    passed     99.68%
+  40  ArgRS_AF_Euk_Thalassiosira_pseudonana_CCMP1335_gene7449555                      35.09%    passed     98.78%
+  41  CysRS_AF_Bact_Mycoplasma_hyopneumoniae_168-L_gene57101512                       61.40%    passed     88.74%
+  42  CysRS_AF_Bact_Prochlorococcus_marinus_subsp_marinus_str_CCMP1375_gene54200571   37.72%    passed     96.59%
+  43  CysRS_AF_Bact_Lactobacillus_amylovorus_GRL1118_gene66523130                     47.81%    passed     88.34%
+  44  CysRS_AF_Mito_Homo_sapiens_gene79587                                            43.42%    passed      5.52%
+  45  ArgRS_AF_Bact_Anoxybacillus_flavithermus_WK1_gene7039015                        36.40%    passed     98.43%
+  46  ArgRS_AF_Bact_Brachyspira_pilosicoli_95_1000_gene56439668                       35.09%    passed     84.91%
+  47  ArgRS_AF_Bact_Chlamydia_psittaci_6BC_gene12242456                               38.60%    passed     98.33%
+WARNING: 8 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                                           42.55%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 9.13525e-05 secs using 98.52% CPU
+WARNING: States(s) I, K, M rarely appear in alignment and may cause numerical problems
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 10 CPU cores
+Increase to 10 rounds for branch lengths
+43 trees examined
+Threads: 1 / Time: 10.166 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -13043
+Threads: 2 / Time: 6.927 sec / Speedup: 1.468 / Efficiency: 73% / LogL: -13043
+Threads: 3 / Time: 5.628 sec / Speedup: 1.806 / Efficiency: 60% / LogL: -13043
+Threads: 4 / Time: 5.319 sec / Speedup: 1.911 / Efficiency: 48% / LogL: -13043
+Determining AUTO threadcount: done in 28.0422 secs using 220% CPU
+BEST NUMBER OF THREADS: 3
+
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.000 / Estimate: 0.049, 1.642 / LogL: -11393.266
+Init pinv, alpha: 0.019, 1.000 / Estimate: 0.049, 1.699 / LogL: -11393.238
+Init pinv, alpha: 0.037, 1.000 / Estimate: 0.049, 1.699 / LogL: -11393.237
+Init pinv, alpha: 0.056, 1.000 / Estimate: 0.049, 1.699 / LogL: -11393.236
+Init pinv, alpha: 0.074, 1.000 / Estimate: 0.050, 1.699 / LogL: -11393.235
+Init pinv, alpha: 0.093, 1.000 / Estimate: 0.050, 1.699 / LogL: -11393.234
+Init pinv, alpha: 0.111, 1.000 / Estimate: 0.050, 1.699 / LogL: -11393.234
+Init pinv, alpha: 0.130, 1.000 / Estimate: 0.050, 1.699 / LogL: -11393.233
+Init pinv, alpha: 0.148, 1.000 / Estimate: 0.050, 1.699 / LogL: -11393.233
+Init pinv, alpha: 0.167, 1.000 / Estimate: 0.050, 1.699 / LogL: -11393.232
+Optimal pinv,alpha: 0.050, 1.699 / LogL: -11393.232
+
+Parameters optimization took 3.207 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.109929 secs using 298.9% CPU
+Computing ML distances took 0.110029 sec (of wall-clock time) 0.330447 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.000213591 secs using 169% CPU
+Constructing RapidNJ tree: done in 0.00771881 secs using 60.07% CPU
+Computing RapidNJ tree took 0.008076 sec (of wall-clock time) 0.005091 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -11380.387
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.743 second
+Computing log-likelihood of 98 initial trees ... 1.673 seconds
+Current best score: -11380.387
+
+Do NNI search on 20 best initial trees
+Optimizing NNI: done in 0.402148 secs using 297.2% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -11306.079
+Optimizing NNI: done in 0.319168 secs using 298.2% CPU
+Optimizing NNI: done in 0.23094 secs using 297.1% CPU
+Optimizing NNI: done in 0.173296 secs using 299.5% CPU
+Optimizing NNI: done in 0.214798 secs using 298% CPU
+Optimizing NNI: done in 0.283517 secs using 296.6% CPU
+Optimizing NNI: done in 0.257501 secs using 297.7% CPU
+Optimizing NNI: done in 0.256683 secs using 296.3% CPU
+Optimizing NNI: done in 0.251139 secs using 298.3% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -11299.547
+Optimizing NNI: done in 0.237229 secs using 297.3% CPU
+Iteration 10 / LogL: -11348.492 / Time: 0h:0m:36s
+Optimizing NNI: done in 0.290018 secs using 298.1% CPU
+Optimizing NNI: done in 0.335532 secs using 297.3% CPU
+Optimizing NNI: done in 0.30412 secs using 295.8% CPU
+Optimizing NNI: done in 0.165715 secs using 298.9% CPU
+Optimizing NNI: done in 0.196126 secs using 297.5% CPU
+Optimizing NNI: done in 0.354596 secs using 297.7% CPU
+Optimizing NNI: done in 0.195311 secs using 297.8% CPU
+Optimizing NNI: done in 0.295791 secs using 296.9% CPU
+Optimizing NNI: done in 0.203678 secs using 297% CPU
+Optimizing NNI: done in 0.283333 secs using 297.5% CPU
+Iteration 20 / LogL: -11311.896 / Time: 0h:0m:39s
+Finish initializing candidate tree set (19)
+Current best tree score: -11299.547 / CPU time: 7.908
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Optimizing NNI: done in 0.278025 secs using 296.6% CPU
+Optimizing NNI: done in 0.254214 secs using 296.3% CPU
+Optimizing NNI: done in 0.380601 secs using 297.8% CPU
+Optimizing NNI: done in 0.308089 secs using 298.2% CPU
+Optimizing NNI: done in 0.402805 secs using 297.1% CPU
+Optimizing NNI: done in 0.30485 secs using 295.3% CPU
+Optimizing NNI: done in 0.295289 secs using 297.3% CPU
+Optimizing NNI: done in 0.352806 secs using 295.9% CPU
+Optimizing NNI: done in 0.317179 secs using 296.5% CPU
+Optimizing NNI: done in 0.24131 secs using 298.1% CPU
+Iteration 30 / LogL: -11300.428 / Time: 0h:0m:42s (0h:0m:29s left)
+Optimizing NNI: done in 0.311447 secs using 297.6% CPU
+Optimizing NNI: done in 0.322672 secs using 296.3% CPU
+Optimizing NNI: done in 0.278987 secs using 297.7% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 33: -11298.515
+Optimizing NNI: done in 0.260117 secs using 297.6% CPU
+Optimizing NNI: done in 0.266334 secs using 297.1% CPU
+Optimizing NNI: done in 0.426743 secs using 297.2% CPU
+Optimizing NNI: done in 0.298327 secs using 296.6% CPU
+Optimizing NNI: done in 0.328824 secs using 296.9% CPU
+Optimizing NNI: done in 0.372141 secs using 298.4% CPU
+Optimizing NNI: done in 0.310253 secs using 298.6% CPU
+Iteration 40 / LogL: -11306.221 / Time: 0h:0m:45s (0h:0m:11s left)
+Optimizing NNI: done in 0.286988 secs using 298.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 41: -11297.154
+Optimizing NNI: done in 0.366727 secs using 297.4% CPU
+Optimizing NNI: done in 0.266579 secs using 296.9% CPU
+Optimizing NNI: done in 0.286401 secs using 296.5% CPU
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 44: -11295.532
+Optimizing NNI: done in 0.273233 secs using 295.4% CPU
+Optimizing NNI: done in 0.271661 secs using 296.5% CPU
+Optimizing NNI: done in 0.303435 secs using 297.9% CPU
+Optimizing NNI: done in 0.27207 secs using 296.9% CPU
+Optimizing NNI: done in 0.20287 secs using 298.8% CPU
+Optimizing NNI: done in 0.327879 secs using 298% CPU
+Iteration 50 / LogL: -11299.024 / Time: 0h:0m:48s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 50 ITERATIONS / Time: 0h:0m:48s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -11295.532
+Optimal log-likelihood: -11295.532
+Proportion of invariable sites: 0.051
+Gamma shape alpha: 1.798
+Parameters optimization took 1 rounds (0.046 sec)
+BEST SCORE FOUND : -11295.532
+Total tree length: 34.441
+
+Total number of iterations: 50
+CPU time used for tree search: 50.225 sec (0h:0m:50s)
+Wall-clock time used for tree search: 17.382 sec (0h:0m:17s)
+Total CPU time used: 122.521 sec (0h:2m:2s)
+Total wall-clock time used: 48.989 sec (0h:0m:48s)
+
+Analysis results written to: 
+  IQ-TREE report:                c2/alnAA_3di.fasta.iqtree
+  Maximum-likelihood tree:       c2/alnAA_3di.fasta.treefile
+  Likelihood distances:          c2/alnAA_3di.fasta.mldist
+  Screen log file:               c2/alnAA_3di.fasta.log
+
+Date and Time: Tue Mar 18 22:38:25 2025
+[Tue Mar 18 22:38:29 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/

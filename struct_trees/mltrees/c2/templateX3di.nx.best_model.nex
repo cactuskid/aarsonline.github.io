@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset part1 = c2/alnAA_3di.fasta: AA, *;
+  charset part2 = c2/aln3di_3di.fasta: , *;
+  charpartition mymodels =
+    LG+I{0.0494448}+G4{1.54584}: part1{33.5943},
+    /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/3diphy/3DI_substmat/3di_substmat.txt+F+I{0.0722283}: part2{12.4847};
+end;

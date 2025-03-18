@@ -1,0 +1,84 @@
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 22:36:21 2025]
+rule BM_ML_mafft_seq:
+    input: CRIMVLG/sequences.fst
+    output: CRIMVLG/alnAA_AA.fasta
+    jobid: 0
+    reason: Missing output files: CRIMVLG/alnAA_AA.fasta
+    wildcards: folder=CRIMVLG
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51037429, partition=cpu, time=00:45:00
+
+mafft CRIMVLG/sequences.fst > CRIMVLG/alnAA_AA.fasta
+Activating conda environment: foldtree
+nthread = 0
+nthreadpair = 0
+nthreadtb = 0
+ppenalty_ex = 0
+stacksize: 8192 kb
+rescale = 1
+Gap Penalty = -1.53, +0.00, +0.00
+
+
+
+Making a distance matrix ..
+    1 / 47
+done.
+
+Constructing a UPGMA tree (efffree=0) ... 
+    0 / 47   10 / 47   20 / 47   30 / 47   40 / 47
+done.
+
+Progressive alignment 1/2... 
+STEP     1 / 46  fSTEP     2 / 46  fSTEP     3 / 46  fSTEP     4 / 46  fSTEP     5 / 46  fSTEP     6 / 46  fSTEP     7 / 46  fSTEP     8 / 46  fSTEP     9 / 46  fSTEP    10 / 46  fSTEP    11 / 46  fSTEP    12 / 46  fSTEP    13 / 46  fSTEP    14 / 46  fSTEP    15 / 46  fSTEP    16 / 46  fSTEP    17 / 46  fSTEP    18 / 46  fSTEP    19 / 46  fSTEP    20 / 46  fSTEP    21 / 46  f
+Reallocating..done. *alloclen = 1320
+STEP    22 / 46  fSTEP    23 / 46  fSTEP    24 / 46  fSTEP    25 / 46  fSTEP    26 / 46  fSTEP    27 / 46  fSTEP    28 / 46  fSTEP    29 / 46  fSTEP    30 / 46  fSTEP    31 / 46  fSTEP    32 / 46  fSTEP    33 / 46  fSTEP    34 / 46  fSTEP    35 / 46  fSTEP    36 / 46  fSTEP    37 / 46  fSTEP    38 / 46  fSTEP    39 / 46  fSTEP    40 / 46  fSTEP    41 / 46  fSTEP    42 / 46  fSTEP    43 / 46  fSTEP    44 / 46  fSTEP    45 / 46  fSTEP    46 / 46  f
+done.
+
+Making a distance matrix from msa.. 
+    0 / 47
+done.
+
+Constructing a UPGMA tree (efffree=1) ... 
+    0 / 47   10 / 47   20 / 47   30 / 47   40 / 47
+done.
+
+Progressive alignment 2/2... 
+STEP     1 / 46  fSTEP     2 / 46  fSTEP     3 / 46  fSTEP     4 / 46  fSTEP     5 / 46  fSTEP     6 / 46  fSTEP     7 / 46  fSTEP     8 / 46  fSTEP     9 / 46  fSTEP    10 / 46  fSTEP    11 / 46  fSTEP    12 / 46  fSTEP    13 / 46  fSTEP    14 / 46  fSTEP    15 / 46  fSTEP    16 / 46  fSTEP    17 / 46  fSTEP    18 / 46  fSTEP    19 / 46  fSTEP    20 / 46  f
+Reallocating..done. *alloclen = 1326
+STEP    21 / 46  fSTEP    22 / 46  fSTEP    23 / 46  fSTEP    24 / 46  fSTEP    25 / 46  fSTEP    26 / 46  fSTEP    27 / 46  fSTEP    28 / 46  fSTEP    29 / 46  fSTEP    30 / 46  fSTEP    31 / 46  fSTEP    32 / 46  fSTEP    33 / 46  fSTEP    34 / 46  fSTEP    35 / 46  fSTEP    36 / 46  fSTEP    37 / 46  fSTEP    38 / 46  fSTEP    39 / 46  fSTEP    40 / 46  fSTEP    41 / 46  fSTEP    42 / 46  fSTEP    43 / 46  fSTEP    44 / 46  fSTEP    45 / 46  fSTEP    46 / 46  f
+done.
+
+disttbfast (aa) Version 7.520
+alg=A, model=BLOSUM62, 1.53, -0.00, -0.00, noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ FFT-NS-2 (Fast but rough)
+ Progressive method (guide trees were built 2 times.)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+[Tue Mar 18 22:36:27 2025]
+Finished job 0.
+1 of 1 steps (100%) done
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
