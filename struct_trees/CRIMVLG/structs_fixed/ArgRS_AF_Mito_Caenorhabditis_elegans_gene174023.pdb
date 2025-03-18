@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   GLU A   1     -11.462 -25.260   5.702  1.00  0.00           N  
 ATOM      2  H   GLU A   1     -11.842 -26.171   5.487  1.00  0.00           H  
 ATOM      3  CA  GLU A   1     -10.235 -25.200   6.516  1.00  0.00           C  

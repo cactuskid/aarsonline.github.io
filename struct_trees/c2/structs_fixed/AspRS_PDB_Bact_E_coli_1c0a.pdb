@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  OP3   G A   1      44.581  17.614  -1.427  1.00  0.00           O  
 ATOM      2  P     G A   1      43.721  17.526  -2.677  1.00  0.00           P  
 ATOM      3  OP1   G A   1      42.372  16.858  -2.445  1.00  0.00           O  

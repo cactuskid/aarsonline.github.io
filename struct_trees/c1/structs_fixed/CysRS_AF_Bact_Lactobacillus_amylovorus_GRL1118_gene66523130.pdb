@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-30
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   VAL A   1     -23.513 -11.246  -6.970  1.00  0.00           N  
 ATOM      2  H   VAL A   1     -23.822 -11.807  -6.189  1.00  0.00           H  
 ATOM      3  H2  VAL A   1     -23.344 -11.839  -7.770  1.00  0.00           H  

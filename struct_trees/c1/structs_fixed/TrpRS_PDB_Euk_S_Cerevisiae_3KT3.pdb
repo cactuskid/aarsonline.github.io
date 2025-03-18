@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   LEU A   1    -178.082  37.454 -57.747  1.00  0.00           N  
 ATOM      2  CA  LEU A   1    -177.872  36.066 -58.259  1.00  0.00           C  
 ATOM      3  C   LEU A   1    -177.261  35.137 -57.200  1.00  0.00           C  

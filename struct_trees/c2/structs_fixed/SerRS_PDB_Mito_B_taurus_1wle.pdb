@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   ARG A   1      61.883  56.564  72.565  1.00  0.00           N  
 ATOM      2  CA  ARG A   1      62.595  56.573  73.874  1.00  0.00           C  
 ATOM      3  C   ARG A   1      63.358  55.273  74.093  1.00  0.00           C  

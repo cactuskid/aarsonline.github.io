@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   GLY A   1      16.273   3.134  12.217  1.00  0.00           N  
 ATOM      2  H   GLY A   1      17.107   3.102  11.649  1.00  0.00           H  
 ATOM      3  CA  GLY A   1      15.491   1.917  12.362  1.00  0.00           C  

@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   SER A   1      63.809 -25.204 -13.551  1.00  0.00           N  
 ATOM      2  CA  SER A   1      62.600 -25.213 -14.428  1.00  0.00           C  
 ATOM      3  C   SER A   1      61.463 -24.413 -13.784  1.00  0.00           C  

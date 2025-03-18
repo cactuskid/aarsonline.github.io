@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   ASP A   1      39.492  61.124  76.239  1.00  0.00           N  
 ATOM      2  CA  ASP A   1      38.062  61.520  76.078  1.00  0.00           C  
 ATOM      3  C   ASP A   1      37.929  62.325  74.785  1.00  0.00           C  

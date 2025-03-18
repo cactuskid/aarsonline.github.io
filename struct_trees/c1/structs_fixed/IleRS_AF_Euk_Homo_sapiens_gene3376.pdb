@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   MET A   1     -18.906  17.359  22.766  1.00  0.00           N  
 ATOM      2  CA  MET A   1     -19.094  16.016  22.234  1.00  0.00           C  
 ATOM      3  C   MET A   1     -20.547  15.586  22.328  1.00  0.00           C  

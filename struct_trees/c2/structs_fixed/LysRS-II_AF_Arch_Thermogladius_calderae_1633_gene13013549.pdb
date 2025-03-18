@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   LEU A   1       0.161 -15.444  32.963  1.00  0.00           N  
 ATOM      2  H   LEU A   1       0.011 -15.827  33.885  1.00  0.00           H  
 ATOM      3  H2  LEU A   1       1.060 -14.984  32.979  1.00  0.00           H  

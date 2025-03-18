@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   SER A   1     -40.990 -19.930   0.315  1.00  0.00           N  
 ATOM      2  H   SER A   1     -41.821 -20.460   0.536  1.00  0.00           H  
 ATOM      3  H2  SER A   1     -40.396 -19.864   1.130  1.00  0.00           H  

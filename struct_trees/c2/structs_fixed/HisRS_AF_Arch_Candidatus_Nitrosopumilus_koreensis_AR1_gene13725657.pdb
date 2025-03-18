@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   MET A   1     -20.801 -20.218   2.961  1.00  0.00           N  
 ATOM      2  H   MET A   1     -20.653 -19.348   3.452  1.00  0.00           H  
 ATOM      3  H2  MET A   1     -20.252 -20.922   3.432  1.00  0.00           H  

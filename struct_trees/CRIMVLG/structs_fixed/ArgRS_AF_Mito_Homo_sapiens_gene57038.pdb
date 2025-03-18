@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   PRO A   1      15.425 -16.289   3.088  1.00  0.00           N  
 ATOM      2  CA  PRO A   1      14.476 -16.844   2.129  1.00  0.00           C  
 ATOM      3  HA  PRO A   1      14.634 -16.396   1.148  1.00  0.00           H  

@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   HIS A   1      29.737  27.289  70.393  1.00  0.00           N  
 ATOM      2  CA  HIS A   1      28.950  26.203  71.071  1.00  0.00           C  
 ATOM      3  C   HIS A   1      29.745  25.530  72.187  1.00  0.00           C  

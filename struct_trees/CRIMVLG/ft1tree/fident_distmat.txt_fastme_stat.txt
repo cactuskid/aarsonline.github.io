@@ -1,0 +1,51 @@
+
+ - FastME 2.1.6.1 - 
+
+
+Papers to be cited:
+
+FastME 2.0 - A comprehensive, accurate and fast distance-based phylogeny inference program.
+	Vincent Lefort, Richard Desper and Olivier Gascuel,
+	Molecular Biology and Evolution 32(10), 2798-800, 2015.
+BIONJ algorithm:
+	Gascuel O. 1997. BIONJ: an improved version of the NJ algorithm based on a simple model of sequence data.
+	Molecular Biology and Evolution, 14(7):685-695
+
+-------------------------------------------------------------------------------
+Settings for this run:
+
+  I                                      Input data type  Matrix          
+  D                                   Number of datasets  1               
+  M                         Initial tree building method  BIONJ           
+  N                                   NNI postprocessing  NNI_BalME       
+  S                                   SPR postprocessing  no              
+
+-------------------------------------------------------------------------------
+Dataset 1
+	Before NNI:     tree length is 32.69171328
+	NNI      1: new tree length is 32.52734348
+	NNI      2: new tree length is 32.43536161
+	NNI      3: new tree length is 32.37206084
+	NNI      4: new tree length is 32.30531581
+	NNI      5: new tree length is 32.26353430
+	NNI      6: new tree length is 32.24432130
+	NNI      7: new tree length is 32.22570471
+	NNI      8: new tree length is 32.20756104
+	NNI      9: new tree length is 32.14279464
+	NNI     10: new tree length is 32.08564924
+	NNI     11: new tree length is 32.06945644
+	NNI     12: new tree length is 32.06002530
+	NNI     13: new tree length is 32.05166149
+	NNI     14: new tree length is 32.04696458
+	NNI     15: new tree length is 32.04204252
+	NNI     16: new tree length is 32.03255592
+	NNI     17: new tree length is 32.02189039
+	NNI     18: new tree length is 32.01715234
+	NNI     19: new tree length is 32.01334691
+	NNI     20: new tree length is 32.00958046
+	NNI     21: new tree length is 32.00552951
+	NNI     22: new tree length is 32.00300034
+	NNI     23: new tree length is 32.00145122
+	Performed 23 NNI(s).
+
+	Explained variance : 0.25249065

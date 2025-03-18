@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.1.1, 2024-10-03
+REMARK   1 CREATED WITH OPENMM 8.1.1, 2025-03-18
 ATOM      1  N   ILE A   1       9.241 -23.276   2.017  1.00  0.00           N  
 ATOM      2  H   ILE A   1       9.707 -24.098   2.372  1.00  0.00           H  
 ATOM      3  CA  ILE A   1       7.996 -23.438   1.249  1.00  0.00           C  
