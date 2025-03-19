@@ -1,25 +1,4 @@
 Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
-Building DAG of jobs...
-Using shell: /usr/bin/bash
-Provided cores: 1 (use --cores to define parallelism)
-Rules claiming more threads will be scaled down.
-Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
-Select jobs to execute...
-
-[Tue Mar 18 22:51:19 2025]
-rule BM_ML_treescore:
-    input: c2/sequence_dataset.csv, c2/templateXAA.nx.treefile.rooted.final
-    output: c2/templateXAA.nx.treefile.rooted.final.treescore
-    log: c2/logs/treescore_AA.log
-    jobid: 0
-    reason: Missing output files: c2/templateXAA.nx.treefile.rooted.final.treescore
-    wildcards: folder=c2, alntype=AA
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038255, partition=cpu, time=00:45:00
-
-python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
-Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmps4zi1jq_.calctreescores.py
-Activating conda environment: foldtree
 Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
 Building DAG of jobs...
 Using shell: /usr/bin/bash
@@ -28,7 +7,24 @@ Rules claiming more threads will be scaled down.
 Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
 Select jobs to execute...
 
-[Tue Mar 18 22:51:20 2025]
+[Tue Mar 18 23:18:00 2025]
+rule BM_ML_treescore:
+    input: c2/sequence_dataset.csv, c2/templateXAA.nx.treefile.rooted.final
+    output: c2/templateXAA.nx.treefile.rooted.final.treescore
+    log: c2/logs/treescore_AA.log
+    jobid: 0
+    reason: Missing output files: c2/templateXAA.nx.treefile.rooted.final.treescore
+    wildcards: folder=c2, alntype=AA
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039643, partition=cpu, time=00:45:00
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 23:18:00 2025]
 rule BM_ML_treescore:
     input: c2/sequence_dataset.csv, c2/templateX3di.nx.treefile.rooted.final
     output: c2/templateX3di.nx.treefile.rooted.final.treescore
@@ -36,14 +32,18 @@ rule BM_ML_treescore:
     jobid: 0
     reason: Missing output files: c2/templateX3di.nx.treefile.rooted.final.treescore
     wildcards: folder=c2, alntype=3di
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038254, partition=cpu, time=00:45:00
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039642, partition=cpu, time=00:45:00
 
 python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
 Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpq_9gn2eg.calctreescores.py
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp4fgq8a4f.calctreescores.py
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgqx59ner.calctreescores.py
 Activating conda environment: foldtree
 Traceback (most recent call last):
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmps4zi1jq_.calctreescores.py", line 89, in <module>
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp4fgq8a4f.calctreescores.py", line 89, in <module>
     uniprot_df = pd.read_csv(snakemake.input[0])
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
     return _read(filepath_or_buffer, kwds)
@@ -57,8 +57,8 @@ Traceback (most recent call last):
     self._reader = parsers.TextReader(src, **kwds)
   File "pandas/_libs/parsers.pyx", line 557, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
-Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmps4zi1jq_.calctreescores.py
-[Tue Mar 18 22:51:23 2025]
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp4fgq8a4f.calctreescores.py
+[Tue Mar 18 23:18:02 2025]
 Error in rule BM_ML_treescore:
     jobid: 0
     input: c2/sequence_dataset.csv, c2/templateXAA.nx.treefile.rooted.final
@@ -68,7 +68,7 @@ Error in rule BM_ML_treescore:
 
 RuleException:
 CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/ML3ditree, line 79:
-Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmps4zi1jq_.calctreescores.py' returned non-zero exit status 1.
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp4fgq8a4f.calctreescores.py' returned non-zero exit status 1.
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/ML3ditree", line 79, in __rule_treescore
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
 Shutting down, this might take some time.
@@ -82,7 +82,7 @@ fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_
 tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
 ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
 Traceback (most recent call last):
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpq_9gn2eg.calctreescores.py", line 89, in <module>
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgqx59ner.calctreescores.py", line 89, in <module>
     uniprot_df = pd.read_csv(snakemake.input[0])
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
     return _read(filepath_or_buffer, kwds)
@@ -96,8 +96,8 @@ Traceback (most recent call last):
     self._reader = parsers.TextReader(src, **kwds)
   File "pandas/_libs/parsers.pyx", line 557, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
-Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpq_9gn2eg.calctreescores.py
-[Tue Mar 18 22:51:25 2025]
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgqx59ner.calctreescores.py
+[Tue Mar 18 23:18:02 2025]
 Error in rule BM_ML_treescore:
     jobid: 0
     input: c2/sequence_dataset.csv, c2/templateX3di.nx.treefile.rooted.final
@@ -107,7 +107,7 @@ Error in rule BM_ML_treescore:
 
 RuleException:
 CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/ML3ditree, line 79:
-Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpq_9gn2eg.calctreescores.py' returned non-zero exit status 1.
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgqx59ner.calctreescores.py' returned non-zero exit status 1.
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/ML3ditree", line 79, in __rule_treescore
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
 Shutting down, this might take some time.

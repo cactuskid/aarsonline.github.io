@@ -6,7 +6,7 @@ Rules claiming more threads will be scaled down.
 Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
 Select jobs to execute...
 
-[Tue Mar 18 22:50:48 2025]
+[Tue Mar 18 23:17:30 2025]
 rule BM_calc_tax_score_seq:
     input: CRIMVLG/sequence_dataset.csv, CRIMVLG/sequences.aln.muscle.fst.nwk.rooted
     output: CRIMVLG/treescores_sequences.muscle.json
@@ -14,14 +14,14 @@ rule BM_calc_tax_score_seq:
     jobid: 0
     reason: Missing output files: CRIMVLG/treescores_sequences.muscle.json
     wildcards: folder=CRIMVLG, aligner=muscle
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038223, partition=cpu, time=00:45:00
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039611, partition=cpu, time=00:45:00
 
 python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
 Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmplxzea_1t.calctreescores.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpmyex92qz.calctreescores.py
 Activating conda environment: foldtree
 Traceback (most recent call last):
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmplxzea_1t.calctreescores.py", line 89, in <module>
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpmyex92qz.calctreescores.py", line 89, in <module>
     uniprot_df = pd.read_csv(snakemake.input[0])
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
     return _read(filepath_or_buffer, kwds)
@@ -35,8 +35,8 @@ Traceback (most recent call last):
     self._reader = parsers.TextReader(src, **kwds)
   File "pandas/_libs/parsers.pyx", line 557, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
-Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmplxzea_1t.calctreescores.py
-[Tue Mar 18 22:50:51 2025]
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpmyex92qz.calctreescores.py
+[Tue Mar 18 23:17:32 2025]
 Error in rule BM_calc_tax_score_seq:
     jobid: 0
     input: CRIMVLG/sequence_dataset.csv, CRIMVLG/sequences.aln.muscle.fst.nwk.rooted
@@ -46,7 +46,7 @@ Error in rule BM_calc_tax_score_seq:
 
 RuleException:
 CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 85:
-Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmplxzea_1t.calctreescores.py' returned non-zero exit status 1.
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpmyex92qz.calctreescores.py' returned non-zero exit status 1.
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 85, in __rule_calc_tax_score_seq
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
 Shutting down, this might take some time.

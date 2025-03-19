@@ -1,30 +1,13 @@
 Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
 Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
 Building DAG of jobs...
-Building DAG of jobs...
-Using shell: /usr/bin/bash
-Provided cores: 1 (use --cores to define parallelism)
-Rules claiming more threads will be scaled down.
-Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
-Select jobs to execute...
 Using shell: /usr/bin/bash
 Provided cores: 1 (use --cores to define parallelism)
 Rules claiming more threads will be scaled down.
 Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
 Select jobs to execute...
 
-[Tue Mar 18 22:50:48 2025]
-rule FX_postprocess:
-    input: c2/3di_xaln_tree.nwk
-    output: c2/3di_xaln_tree.PP.nwk
-    log: c2/logs/3di_xaln_struct_postprocess.log
-    jobid: 0
-    reason: Missing output files: c2/3di_xaln_tree.PP.nwk
-    wildcards: folder=c2, alntype=3di
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038220, partition=cpu, time=00:45:00
-
-
-[Tue Mar 18 22:50:48 2025]
+[Tue Mar 18 23:17:30 2025]
 rule FX_postprocess:
     input: c2/AA_xaln_tree.nwk
     output: c2/AA_xaln_tree.PP.nwk
@@ -32,18 +15,35 @@ rule FX_postprocess:
     jobid: 0
     reason: Missing output files: c2/AA_xaln_tree.PP.nwk
     wildcards: folder=c2, alntype=AA
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038222, partition=cpu, time=00:45:00
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039610, partition=cpu, time=00:45:00
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 23:17:30 2025]
+rule FX_postprocess:
+    input: c2/3di_xaln_tree.nwk
+    output: c2/3di_xaln_tree.PP.nwk
+    log: c2/logs/3di_xaln_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c2/3di_xaln_tree.PP.nwk
+    wildcards: folder=c2, alntype=3di
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039608, partition=cpu, time=00:45:00
 
 python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
 python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
 Activating conda environment: foldtree
 Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmprt1johr5.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmphl2ufoa_.postprocess.py
 Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpbk0gxs0x.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpvxwgkhoq.postprocess.py
 Activating conda environment: foldtree
 Traceback (most recent call last):
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmprt1johr5.postprocess.py", line 8, in <module>
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmphl2ufoa_.postprocess.py", line 8, in <module>
     treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
     tre = toytree.tree(treestr )
@@ -60,8 +60,32 @@ Traceback (most recent call last):
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
     raise NewickError("Unexpected newick format {}".format(subnw))
 toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.66866
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmphl2ufoa_.postprocess.py
+[Tue Mar 18 23:17:32 2025]
+Error in rule FX_postprocess:
+    jobid: 0
+    input: c2/AA_xaln_tree.nwk
+    output: c2/AA_xaln_tree.PP.nwk
+    log: c2/logs/AA_xaln_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
+
+RuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/FidentXaln, line 82:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmphl2ufoa_.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/FidentXaln", line 82, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
 Traceback (most recent call last):
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpbk0gxs0x.postprocess.py", line 8, in <module>
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpvxwgkhoq.postprocess.py", line 8, in <module>
     treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
     tre = toytree.tree(treestr )
@@ -78,32 +102,8 @@ Traceback (most recent call last):
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
     raise NewickError("Unexpected newick format {}".format(subnw))
 toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.43453
-Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmprt1johr5.postprocess.py
-[Tue Mar 18 22:50:51 2025]
-Error in rule FX_postprocess:
-    jobid: 0
-    input: c2/AA_xaln_tree.nwk
-    output: c2/AA_xaln_tree.PP.nwk
-    log: c2/logs/AA_xaln_struct_postprocess.log (check log file(s) for error details)
-    conda-env: foldtree
-
-RuleException:
-CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/FidentXaln, line 82:
-Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmprt1johr5.postprocess.py' returned non-zero exit status 1.
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/FidentXaln", line 82, in __rule_postprocess
-  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
-Shutting down, this might take some time.
-Exiting because a job execution failed. Look above for error message
- benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
-3 families to benchmark
-benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
-ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
-custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
-fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
-tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
-ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
-Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpbk0gxs0x.postprocess.py
-[Tue Mar 18 22:50:51 2025]
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpvxwgkhoq.postprocess.py
+[Tue Mar 18 23:17:32 2025]
 Error in rule FX_postprocess:
     jobid: 0
     input: c2/3di_xaln_tree.nwk
@@ -113,7 +113,7 @@ Error in rule FX_postprocess:
 
 RuleException:
 CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/FidentXaln, line 82:
-Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpbk0gxs0x.postprocess.py' returned non-zero exit status 1.
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpvxwgkhoq.postprocess.py' returned non-zero exit status 1.
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/FidentXaln", line 82, in __rule_postprocess
   File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
 Shutting down, this might take some time.

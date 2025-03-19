@@ -4,107 +4,381 @@ Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow
 Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
 Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
 Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 23:17:30 2025]
+rule BM_postprocess:
+    input: c1/fident_1_exp_struct_tree.nwk
+    output: c1/fident_1_exp_struct_tree.PP.nwk
+    log: c1/logs/fident_1_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/fident_1_exp_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=fident, alntype=1, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039634, partition=cpu, time=00:45:00
+
 Building DAG of jobs...
 Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 23:17:30 2025]
+rule BM_postprocess:
+    input: c1/alntmscore_0_raw_struct_tree.nwk
+    output: c1/alntmscore_0_raw_struct_tree.PP.nwk
+    log: c1/logs/alntmscore_0_raw_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/alntmscore_0_raw_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=alntmscore, alntype=0, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039618, partition=cpu, time=00:45:00
+
+
+[Tue Mar 18 23:17:30 2025]
+rule BM_postprocess:
+    input: c1/fident_0_exp_struct_tree.nwk
+    output: c1/fident_0_exp_struct_tree.PP.nwk
+    log: c1/logs/fident_0_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/fident_0_exp_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=fident, alntype=0, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039619, partition=cpu, time=00:45:00
+
 Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
+Select jobs to execute...
+
+[Tue Mar 18 23:17:30 2025]
+rule BM_postprocess:
+    input: c1/lddt_0_exp_struct_tree.nwk
+    output: c1/lddt_0_exp_struct_tree.PP.nwk
+    log: c1/logs/lddt_0_exp_struct_postprocess.log
+    jobid: 0
+    reason: Missing output files: c1/lddt_0_exp_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=lddt, alntype=0, exp=exp
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039616, partition=cpu, time=00:45:00
+
 Building DAG of jobs...
 Using shell: /usr/bin/bash
 Provided cores: 1 (use --cores to define parallelism)
 Rules claiming more threads will be scaled down.
 Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
 Select jobs to execute...
-Using shell: /usr/bin/bash
-Provided cores: 1 (use --cores to define parallelism)
-Rules claiming more threads will be scaled down.
-Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
-Select jobs to execute...
-Using shell: /usr/bin/bash
-Using shell: /usr/bin/bash
-Provided cores: 1 (use --cores to define parallelism)
-Provided cores: 1 (use --cores to define parallelism)
-Rules claiming more threads will be scaled down.
-Rules claiming more threads will be scaled down.
-Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
-Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
 
-Select jobs to execute...
-Select jobs to execute...
-[Tue Mar 18 22:51:32 2025]
+[Tue Mar 18 23:17:30 2025]
 rule BM_postprocess:
-    input: c1/alntmscore_1_raw_struct_tree.nwk
-    output: c1/alntmscore_1_raw_struct_tree.PP.nwk
-    log: c1/logs/alntmscore_1_raw_struct_postprocess.log
+    input: c1/fident_0_raw_struct_tree.nwk
+    output: c1/fident_0_raw_struct_tree.PP.nwk
+    log: c1/logs/fident_0_raw_struct_postprocess.log
     jobid: 0
-    reason: Missing output files: c1/alntmscore_1_raw_struct_tree.PP.nwk
-    wildcards: folder=c1, mattype=alntmscore, alntype=1, exp=raw
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038266, partition=cpu, time=00:45:00
+    reason: Missing output files: c1/fident_0_raw_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=fident, alntype=0, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039617, partition=cpu, time=00:45:00
 
-
-[Tue Mar 18 22:51:32 2025]
-rule BM_postprocess:
-    input: c1/alntmscore_1_exp_struct_tree.nwk
-    output: c1/alntmscore_1_exp_struct_tree.PP.nwk
-    log: c1/logs/alntmscore_1_exp_struct_postprocess.log
-    jobid: 0
-    reason: Missing output files: c1/alntmscore_1_exp_struct_tree.PP.nwk
-    wildcards: folder=c1, mattype=alntmscore, alntype=1, exp=exp
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038267, partition=cpu, time=00:45:00
-
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Config file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/config/config_vars.yaml is extended by additional config specified via the command line.
+Building DAG of jobs...
 Using shell: /usr/bin/bash
 Provided cores: 1 (use --cores to define parallelism)
 Rules claiming more threads will be scaled down.
 Provided resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954
 Select jobs to execute...
 
-
-[Tue Mar 18 22:51:32 2025]
-[Tue Mar 18 22:51:32 2025]
+[Tue Mar 18 23:17:30 2025]
 rule BM_postprocess:
-    input: c1/fident_1_raw_struct_tree.nwk
-    output: c1/fident_1_raw_struct_tree.PP.nwk
-    log: c1/logs/fident_1_raw_struct_postprocess.log
+    input: c1/lddt_0_raw_struct_tree.nwk
+    output: c1/lddt_0_raw_struct_tree.PP.nwk
+    log: c1/logs/lddt_0_raw_struct_postprocess.log
     jobid: 0
-    reason: Missing output files: c1/fident_1_raw_struct_tree.PP.nwk
-    wildcards: folder=c1, mattype=fident, alntype=1, exp=raw
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038265, partition=cpu, time=00:45:00rule BM_postprocess:
-    input: c1/lddt_1_exp_struct_tree.nwk
-    output: c1/lddt_1_exp_struct_tree.PP.nwk
-    log: c1/logs/lddt_1_exp_struct_postprocess.log
+    reason: Missing output files: c1/lddt_0_raw_struct_tree.PP.nwk
+    wildcards: folder=c1, mattype=lddt, alntype=0, exp=raw
+    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51039615, partition=cpu, time=00:45:00
+
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpyp3oku1k.postprocess.py
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpw2z5ru_p.postprocess.py
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpsarhxm90.postprocess.py
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp1jo2tv56.postprocess.py
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpuig_g2jy.postprocess.py
+Activating conda environment: foldtree
+Activating conda environment: foldtree
+python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgv1ly2px.postprocess.py
+Activating conda environment: foldtree
+Traceback (most recent call last):
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpw2z5ru_p.postprocess.py", line 8, in <module>
+    treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
+    tre = toytree.tree(treestr )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/Toytree.py", line 70, in __init__
+    self.treenode = TreeParser(newick, tree_format).treenodes[0]
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 80, in __init__
+    self._run()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 96, in _run
+    self.get_treenodes()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 164, in get_treenodes
+    self.treenodes.append(extractor.newick_from_string())
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 260, in newick_from_string
+    self.apply_node_data(closing_nodes[0], "leaf")
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
+    raise NewickError("Unexpected newick format {}".format(subnw))
+toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.47851
+Traceback (most recent call last):
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpyp3oku1k.postprocess.py", line 8, in <module>
+    treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
+    tre = toytree.tree(treestr )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/Toytree.py", line 70, in __init__
+    self.treenode = TreeParser(newick, tree_format).treenodes[0]
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 80, in __init__
+    self._run()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 96, in _run
+    self.get_treenodes()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 164, in get_treenodes
+    self.treenodes.append(extractor.newick_from_string())
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 260, in newick_from_string
+    self.apply_node_data(closing_nodes[0], "leaf")
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
+    raise NewickError("Unexpected newick format {}".format(subnw))
+toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.02220
+Traceback (most recent call last):
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpsarhxm90.postprocess.py", line 8, in <module>
+    treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
+    tre = toytree.tree(treestr )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/Toytree.py", line 70, in __init__
+    self.treenode = TreeParser(newick, tree_format).treenodes[0]
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 80, in __init__
+    self._run()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 96, in _run
+    self.get_treenodes()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 164, in get_treenodes
+    self.treenodes.append(extractor.newick_from_string())
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 260, in newick_from_string
+    self.apply_node_data(closing_nodes[0], "leaf")
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
+    raise NewickError("Unexpected newick format {}".format(subnw))
+toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.05001
+Traceback (most recent call last):
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp1jo2tv56.postprocess.py", line 8, in <module>
+    treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
+    tre = toytree.tree(treestr )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/Toytree.py", line 70, in __init__
+    self.treenode = TreeParser(newick, tree_format).treenodes[0]
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 80, in __init__
+    self._run()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 96, in _run
+    self.get_treenodes()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 164, in get_treenodes
+    self.treenodes.append(extractor.newick_from_string())
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 260, in newick_from_string
+    self.apply_node_data(closing_nodes[0], "leaf")
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
+    raise NewickError("Unexpected newick format {}".format(subnw))
+toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.09123
+Traceback (most recent call last):
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpuig_g2jy.postprocess.py", line 8, in <module>
+    treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
+    tre = toytree.tree(treestr )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/Toytree.py", line 70, in __init__
+    self.treenode = TreeParser(newick, tree_format).treenodes[0]
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 80, in __init__
+    self._run()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 96, in _run
+    self.get_treenodes()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 164, in get_treenodes
+    self.treenodes.append(extractor.newick_from_string())
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 260, in newick_from_string
+    self.apply_node_data(closing_nodes[0], "leaf")
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
+    raise NewickError("Unexpected newick format {}".format(subnw))
+toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.09863
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpyp3oku1k.postprocess.py
+[Tue Mar 18 23:17:32 2025]
+Error in rule BM_postprocess:
     jobid: 0
-    reason: Missing output files: c1/lddt_1_exp_struct_tree.PP.nwk
-    wildcards: folder=c1, mattype=lddt, alntype=1, exp=exp
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038264, partition=cpu, time=00:45:00
+    input: c1/alntmscore_0_raw_struct_tree.nwk
+    output: c1/alntmscore_0_raw_struct_tree.PP.nwk
+    log: c1/logs/alntmscore_0_raw_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
 
-
-
-
-[Tue Mar 18 22:51:32 2025]
-rule BM_postprocess:
-    input: c1/lddt_1_raw_struct_tree.nwk
-    output: c1/lddt_1_raw_struct_tree.PP.nwk
-    log: c1/logs/lddt_1_raw_struct_postprocess.log
+RuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 152:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpyp3oku1k.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 152, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpw2z5ru_p.postprocess.py
+[Tue Mar 18 23:17:32 2025]
+Error in rule BM_postprocess:
     jobid: 0
-    reason: Missing output files: c1/lddt_1_raw_struct_tree.PP.nwk
-    wildcards: folder=c1, mattype=lddt, alntype=1, exp=raw
-    resources: mem_mb=15000, mem_mib=14306, disk_mb=1000, disk_mib=954, tmpdir=/tmp/51038263, partition=cpu, time=00:45:00
+    input: c1/fident_1_exp_struct_tree.nwk
+    output: c1/fident_1_exp_struct_tree.PP.nwk
+    log: c1/logs/fident_1_exp_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
 
-python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
-python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
-python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
-python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
-python -c "from __future__ import print_function; import sys, json; print(json.dumps([sys.version_info.major, sys.version_info.minor]))"
-Activating conda environment: foldtree
-Activating conda environment: foldtree
-Activating conda environment: foldtree
-Activating conda environment: foldtree
-Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp4mjctlac.postprocess.py
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpkrlx9n95.postprocess.py
-Activating conda environment: foldtree
-Activating conda environment: foldtree
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp3nskj13x.postprocess.py
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpzs9vv26y.postprocess.py
-python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp21pzon02.postprocess.py
-Activating conda environment: foldtree
-Activating conda environment: foldtree
-Activating conda environment: foldtree
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+RuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 152:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpw2z5ru_p.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 152, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp1jo2tv56.postprocess.py
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpsarhxm90.postprocess.py
+[Tue Mar 18 23:17:32 2025]
+[Tue Mar 18 23:17:32 2025]
+Error in rule BM_postprocess:
+    jobid: 0
+    input: c1/lddt_0_exp_struct_tree.nwk
+    output: c1/lddt_0_exp_struct_tree.PP.nwk
+    log: c1/logs/lddt_0_exp_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
+Error in rule BM_postprocess:
+    jobid: 0
+    input: c1/fident_0_raw_struct_tree.nwk
+    output: c1/fident_0_raw_struct_tree.PP.nwk
+    log: c1/logs/fident_0_raw_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
+
+
+RuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 152:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmp1jo2tv56.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 152, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in runRuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 152:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpsarhxm90.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 152, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+Traceback (most recent call last):
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgv1ly2px.postprocess.py", line 8, in <module>
+    treefile = foldseek2tree.postprocess(snakemake.input[0] , snakemake.output[0] )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/../src/foldseek2tree.py", line 190, in postprocess
+    tre = toytree.tree(treestr )
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/Toytree.py", line 70, in __init__
+    self.treenode = TreeParser(newick, tree_format).treenodes[0]
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 80, in __init__
+    self._run()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 96, in _run
+    self.get_treenodes()
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 164, in get_treenodes
+    self.treenodes.append(extractor.newick_from_string())
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 260, in newick_from_string
+    self.apply_node_data(closing_nodes[0], "leaf")
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/site-packages/toytree/TreeParser.py", line 329, in apply_node_data
+    raise NewickError("Unexpected newick format {}".format(subnw))
+toytree.TreeParser.NewickError: Unexpected newick format ArgRS_AF_Bact_Escherichia_coli_O157:H7_str._Sakai_gene912519:0.04501
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpuig_g2jy.postprocess.py
+[Tue Mar 18 23:17:32 2025]
+Error in rule BM_postprocess:
+    jobid: 0
+    input: c1/fident_0_exp_struct_tree.nwk
+    output: c1/fident_0_exp_struct_tree.PP.nwk
+    log: c1/logs/fident_0_exp_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
+
+RuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 152:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpuig_g2jy.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 152, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+Not cleaning up /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgv1ly2px.postprocess.py
+[Tue Mar 18 23:17:32 2025]
+Error in rule BM_postprocess:
+    jobid: 0
+    input: c1/lddt_0_raw_struct_tree.nwk
+    output: c1/lddt_0_raw_struct_tree.PP.nwk
+    log: c1/logs/lddt_0_raw_struct_postprocess.log (check log file(s) for error details)
+    conda-env: foldtree
+
+RuleException:
+CalledProcessError in file /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking, line 152:
+Command 'source /work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/bin/activate 'foldtree'; set -euo pipefail;  python /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/aars/aarsonline.github.io/struct_trees/mltrees/.snakemake/scripts/tmpgv1ly2px.postprocess.py' returned non-zero exit status 1.
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/workflow/benchmarking", line 152, in __rule_postprocess
+  File "/work/FAC/FBM/DBC/cdessim2/default/dmoi/miniconda3/envs/foldtree/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+ benchmark all running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+3 families to benchmark
+benchmarking running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml3ditree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+custom submat /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/mafftmat/3diHEXmat.txt
+fident x aln running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+tcoffee benchmark running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
+ml_3dixAA single iqtree running in  /work/FAC/FBM/DBC/cdessim2/default/dmoi/projects/snake_tree/
