@@ -22,30 +22,32 @@ Settings for this run:
 
 -------------------------------------------------------------------------------
 Dataset 1
-	Before NNI:     tree length is 32.69171328
-	NNI      1: new tree length is 32.52734348
-	NNI      2: new tree length is 32.43536161
-	NNI      3: new tree length is 32.37206084
-	NNI      4: new tree length is 32.30531581
-	NNI      5: new tree length is 32.26353430
-	NNI      6: new tree length is 32.24432130
-	NNI      7: new tree length is 32.22570471
-	NNI      8: new tree length is 32.20756104
-	NNI      9: new tree length is 32.14279464
-	NNI     10: new tree length is 32.08564924
-	NNI     11: new tree length is 32.06945644
-	NNI     12: new tree length is 32.06002530
-	NNI     13: new tree length is 32.05166149
-	NNI     14: new tree length is 32.04696458
-	NNI     15: new tree length is 32.04204252
-	NNI     16: new tree length is 32.03255592
-	NNI     17: new tree length is 32.02189039
-	NNI     18: new tree length is 32.01715234
-	NNI     19: new tree length is 32.01334691
-	NNI     20: new tree length is 32.00958046
-	NNI     21: new tree length is 32.00552951
-	NNI     22: new tree length is 32.00300034
-	NNI     23: new tree length is 32.00145122
-	Performed 23 NNI(s).
+	Before NNI:     tree length is 32.48944821
+	NNI      1: new tree length is 32.43237792
+	NNI      2: new tree length is 32.38294837
+	NNI      3: new tree length is 32.35521333
+	NNI      4: new tree length is 32.33317701
+	NNI      5: new tree length is 32.31557462
+	NNI      6: new tree length is 32.30738565
+	NNI      7: new tree length is 32.29622338
+	NNI      8: new tree length is 32.26307623
+	NNI      9: new tree length is 32.23979169
+	NNI     10: new tree length is 32.21842942
+	NNI     11: new tree length is 32.20881841
+	NNI     12: new tree length is 32.19375583
+	NNI     13: new tree length is 32.18446539
+	NNI     14: new tree length is 32.17609081
+	NNI     15: new tree length is 32.16941180
+	NNI     16: new tree length is 32.16092152
+	NNI     17: new tree length is 32.14323319
+	NNI     18: new tree length is 32.12848694
+	NNI     19: new tree length is 32.11889847
+	NNI     20: new tree length is 32.10561660
+	NNI     21: new tree length is 32.09221134
+	NNI     22: new tree length is 32.08508613
+	NNI     23: new tree length is 32.07834207
+	NNI     24: new tree length is 32.07206172
+	NNI     25: new tree length is 32.07147578
+	Performed 25 NNI(s).
 
-	Explained variance : 0.25249065
+	Explained variance : 0.56481204
